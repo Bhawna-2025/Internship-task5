@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @theme{
+            --font-aleo : "Aleo", sans-serif;
+            --font-great-vibes : "Great Vibes" , cursive;
+            --font-fustat:"Fustat" , sans-serif;
+        }
+    </style>
+</head>
+
+<body class="relative">
+
+    <!-- Hero Section (combines background, header, and hero content) -->
+    <section id="hero-section" class="relative w-full min-h-screen overflow-hidden">
+
+        <!-- Background Layers -->
+        <div id="hero-background" class="absolute inset-0 -z-20">
+            <!-- IMAGE LAYER 1 -->
+            <div id="bg-1"
+                class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100 transition-opacity duration-[2000ms] ease-in-out"
+                style="background-image: url('assets/sliderImage1.png');">
+            </div>
+
+            <!-- IMAGE LAYER 2 -->
+            <div id="bg-2"
+                class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 transition-opacity duration-[2000ms] ease-in-out"
+                style="background-image: url('assets/sliderimage2.png');">
+            </div>
+
+            <!-- DARK OVERLAY -->
+            <div class="absolute inset-0 bg-black/40 z-20 pointer-events-none">
+            </div>
+
+            <!-- GRADIENT OVERLAY -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-transparent z-20 pointer-events-none">
+            </div>
+        </div>
+
+        <!-- Header containing Top Bar and Navigation -->
+        <header class="relative z-50 w-full md:pt-5 pt-2">
+
+            <div class="flex justify-between items-center md:px-20 px-5 pb-3 font-fustat text-[#FFFFFF] ">
+                <div class="flex md:flex-row flex-col gap-2">
+                    <p class="md:text-[16px] text-[12px]">Follow Us On</p>
+                    <div class="flex gap-3">
+                        <a href="#"><img src="assets/InstaIcon.png" alt="Instagram"
+                                class=" p-2 rounded-full bg-[#A18E5A]"></a>
+                        <a href="#"><img src="assets/facebookIcon2.png" alt="TikTok"
+                                class=" p-2 rounded-full bg-[#A18E5A]"></a>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col  md:gap-7 gap-1 md:items-center text-[14px]">
+                    <div class="flex items-center gap-2">
+                        <p class="md:flex md:gap-2 hidden">Call: <span class="font-semibold"> +44 (0)1845 421182 </span>
+                            or Email: <span class="font-semibold  ">enquiries@birdforthhall.co.uk</span> </p>
+                    </div>
+                    <div class="flex items-center md:gap-2 gap-3">
+                        <img src="assets/ukIcon.png" alt="English" class="md:h-6 md:w-6 h-4  w-4 rounded-full">
+                        <p class="md:text-[16px] text-[12px]">English</p>
+                        <img src="assets/whiteVector.png" alt="Dropdown">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav
+                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF] rounded-full md:mx-10 mx-2 md:py-1 py-2 shadow-sm backdrop-blur-sm">
+                <div>
+                    <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo"
+                        class="md:h-[70px] h-[40px] md:w-auto">
+                </div>
+                <div id="nav_links"
+                    class=" md:flex md:flex-row flex-col md:static absolute items-center md:gap-6 -top-20 -right-2 md:bg-transparent bg-[#FFFFFFE6] text-[#4C4848] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5  md:py-0 py-6 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
+
+                    <div id="cross2" class="md:hidden flex items-center justify-between mb-10">
+                        <img src="assets/Vector (11).png" alt="" class="cursor-pointor">
+                        <button id="menubar_mobile" class=" menubar_mobile focus:outline-none cursor-pointer ">
+                            <img src="assets/hamburger.png" alt="Menu" class="h-8">
+                        </button>
+                    </div>
+                    <div class=" flex md:flex-row flex-col gap-6">
+                        <div class="flex items-center gap-1 hover:opacity-80 transition-opacity ">
+                            <a href="/diagnosticScans.html" class="font-bold text-[14px]">Our Cottages</a>
+                            <img src="assets/Vector (11).png" alt="Dropdown">
+                        </div>
+
+                        <div class="hover:opacity-80 transition-opacity">
+                            <a href="#" class="font-bold text-[14px]">Availability & Book</a>
+                        </div>
+
+                        <div class=" flex items-center gap-1 hover:opacity-80 transition-opacity">
+                            <a href="#" class="font-bold text-[14px]">Your Stay</a>
+                            <img src="assets/Vector (11).png" alt="Dropdown">
+                        </div>
+
+                        <div class=" flex items-center gap-1 hover:opacity-80 transition-opacity">
+                            <a herf="#" class="font-bold text-[14px]">Weddings</a>
+                            <img src="assets/Vector (11).png" alt="Dropdown">
+                        </div>
+
+                        <div class=" hover:opacity-80 transition-opacity">
+                            <a href="#" class="font-bold text-[14px]">Meetings and Events</a>
+                        </div>
+
+                        <div class=" hover:opacity-80  transition-opacity">
+                            <a href="/team.html" class="font-bold text-[14px]">Blog</a>
+
+                        </div>
+
+                        <div class=" hover:opacity-80 transition-opacity">
+                            <a href="#" class="font-bold text-[14px]"> Contact</a>
+                        </div>
+
+                        <!-- menu bar for desktop view -->
+                        <button id="menubar_desktop"
+                            class="menubar_desktop focus:outline-none cursor-pointer md:block hidden cursor-pointer">
+                            <img src="assets/hamburger.png" alt="Menu" class="h-5">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Menu bar for mobile view  -->
+                <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden cursor-pointer ">
+                    <img src="assets/hamburger.png" alt="Menu" class="h-[44px]">
+                </button>
+            </nav>
+
+            <!-- hidden toggle menu -->
+            <div id="hiddenMenu"
+                class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
+                <div id="cross">
+                    <img src="assets/Vector (2).png" alt="">
+                </div>
+                <img src="assets/logo.png" alt="" class="h-[73px] ml-22">
+                <div class="flex items-center gap-2">
+                    <img src="assets/Group 125.png  " alt="">
+                    <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/ic_baseline-phone (1).png" alt="">
+                    <p>0121 392 3112</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="assets/Group 127.png" alt="">
+                    <p>admin@ultrasounddiagnostic.co.uk</p>
+                </div>
+
+
+                <div class="mt-8 flex gap-5">
+                    <a href="#" class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 md:px-6 px-4 rounded-full text-white font-semibold md:text-[20px] text-[14px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
+                hover:text-[#0E0F3D] ">
+                        Contact Us
+                        <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
+                            class="group-hover:invert transition-all">
+                    </a>
+                    <a href="/team.html"
+                        class="md:py-3 py-2 md:px-6 px-4 rounded-full md:text-[20px] text-[14px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
+                        Meet The Team
+                        <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
+                            class="group-hover:brightness-0 group-hover:invert transition-all">
+                    </a>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Main Hero Content -->
+        <main class="relative z-20 flex flex-col mt-12 pb-20 text-white px-10 ">
+
+            <div class=" max-w-4xl  md:py-10">
+                <h1 class="md:text-[102.25px] text-[40px] font-[400] m-0 leading-lg font-great-vibes">
+                    Welcome
+                </h1>
+                <h2 class="md:text-[45px] text-[15px] font-[700]  m-0 leading-tight max-w-xl font-aleo">
+                    to Birdforth Hall Holiday Cottages and Wedding Venue, York
+                </h2>
+                <p class="md:text-[20px] text-[14px]  font-[400] mt-6 max-w-xl">
+                    Set within beautiful rural surroundings and steeped in history. Birdforth Hall offers the perfect
+                    setting for a relaxing short break, memorable holiday, wedding, celebration or special event.
+                </p>
+            </div>
+
+            <div class="flex  md:gap-8 gap-4 items-center md:mt-5 mt-9">
+                <div>
+                    <a href=""
+                        class="bg-[#A18E5A] md:py-4 py-2 md:px-8 px-3 text-white font-semibold md:text-[20px] text-[10px] flex items-center md:gap-2  hover:bg-none duration-400 border-2 border-white hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D]">
+                        Search & Book
+                    </a>
+                </div>
+                <div
+                    class="md:rounded-xl rounded-lg shadow-sm overflow-hidden hover:-translate-y-1 transition-transform">
+                    <img src="assets/Image2.png" alt="Google Reviews"
+                        class="h-auto md:w-[10vw] w-[35vw] object-contain">
+                    <p class="text-end">View all reviews</p>
+                </div>
+
+                <div class="h-10 w-[1px] bg-gradient-to-b from-[#FFFFFF00] via-[#FFFFFF] to-[#99999900]"></div>
+                <div class="md:rounded-lg shadow-sm overflow-hidden hover:-translate-y-1 transition-transform">
+                    <img src="assets/Image1.png" alt="Yell.com Reviews"
+                        class="h-auto md:w-[10vw] w-[35vw] object-contain">
+                </div>
+            </div>
+
+            <div class="absolute right-60 top-8 h-110 w-140  ">
+                <div class="absolute -top-2 left-[30%] rotate-1 ">
+                    <img src="assets/photoframehead.png" alt="">
+                </div>
+                <img src="assets/Clip path group.png" alt="" class="h-[100%] z-100">
+                <div class="-z-1 absolute top-5 h-[85%] w-[95%] pl-5">
+                    <img src="assets/sliderimage2.png" alt="" class="h-full object-cover ">
+                </div>
+            </div>
+
+            <div class="absolute right-20 bottom-40 h-60 w-90  z-200  ">
+                <div class="absolute -top-2 left-[25%] rotate-1">
+                    <img src="assets/photoframehead.png" alt="" class="h-7">
+                </div>
+                <img src="assets/Clip path group.png" alt="" class="h-[100%] z-100">
+                <div class="-z-1 absolute top-5 h-[85%] w-[84%] pl-5">
+                    <img src="assets/sliderImage5.jpg" alt="" class="h-full w-full object-cover ">
+                </div>
+            </div>
+
+        </main>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
