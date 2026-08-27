@@ -11,12 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style type="text/tailwindcss">
         @theme{
             --font-aleo : "Aleo", sans-serif;
             --font-great-vibes : "Great Vibes" , cursive;
-            --font-fustat:"Fustat" , sans-serif;
+            --font-Cormorant:"Cormorant" , sans-serif;
         }
     </style>
 </head>
@@ -45,14 +47,15 @@
             </div>
 
             <!-- GRADIENT OVERLAY -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-transparent z-20 pointer-events-none">
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-transparent z-20 pointer-events-none">
             </div>
         </div>
 
         <!-- Header containing Top Bar and Navigation -->
         <header class="relative z-50 w-full md:pt-5 pt-2">
 
-            <div class="flex justify-between items-center md:px-20 px-5 pb-3 font-fustat text-[#FFFFFF] ">
+            <div class="flex justify-between items-center md:px-20 px-5 pb-3 font-aleo text-[#FFFFFF] ">
                 <div class="flex md:flex-row flex-col gap-2">
                     <p class="md:text-[16px] text-[12px]">Follow Us On</p>
                     <div class="flex gap-3">
@@ -91,7 +94,7 @@
                             <img src="assets/hamburger.png" alt="Menu" class="h-8">
                         </button>
                     </div>
-                    <div class=" flex md:flex-row flex-col gap-6">
+                    <div class=" flex md:flex-row flex-col gap-6 font-aleo">
                         <div class="flex items-center gap-1 hover:opacity-80 transition-opacity ">
                             <a href="/diagnosticScans.html" class="font-bold text-[14px]">Our Cottages</a>
                             <img src="assets/Vector (11).png" alt="Dropdown">
@@ -188,16 +191,17 @@
                 <h2 class="md:text-[45px] text-[15px] font-[700]  m-0 leading-tight max-w-xl font-aleo">
                     to Birdforth Hall Holiday Cottages and Wedding Venue, York
                 </h2>
-                <p class="md:text-[20px] text-[14px]  font-[400] mt-6 max-w-xl">
+                <p class="md:text-[18px] text-[14px]  font-[400] mt-6 max-w-xl font-aleo">
                     Set within beautiful rural surroundings and steeped in history. Birdforth Hall offers the perfect
                     setting for a relaxing short break, memorable holiday, wedding, celebration or special event.
                 </p>
             </div>
 
-            <div class="flex  md:gap-8 gap-4 items-center md:mt-5 mt-9">
+
+            <div class="flex  md:gap-8 gap-4 items-center md:mt-5 mt-9 font-aleo">
                 <div>
-                    <a href=""
-                        class="bg-[#A18E5A] md:py-4 py-2 md:px-8 px-3 text-white font-semibold md:text-[20px] text-[10px] flex items-center md:gap-2  hover:bg-none duration-400 border-2 border-white hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding hover:text-[#0E0F3D]">
+                   <a href="#"
+                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] border-white flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white  transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
                         Search & Book
                     </a>
                 </div>
@@ -215,6 +219,7 @@
                 </div>
             </div>
 
+            <!-- photframes -->
             <div class="absolute right-60 top-8 h-110 w-140  ">
                 <div class="absolute -top-2 left-[30%] rotate-1 ">
                     <img src="assets/photoframehead.png" alt="">
@@ -238,23 +243,22 @@
         </main>
 
     </section>
-    
+
     <!-- Our Fabulous Holiday Cottages section -->
     <section id="third-section" class=" w-full pt-20 md:px-15 px-10 py-20 relative ">
-       
+
         <div class="flex md:flex-row flex-col md:gap-0 gap-3 justify-between items-center">
             <div>
-                <h2
-                    class=" md:text-[50px] text-[35px] font-[800] text-[#000000]  m-0 leading-tight inline ">
+                <h2 class=" md:text-[50px] text-[35px] font-[800] text-[#000000]  m-0 leading-tight inline ">
                     Our Fabulous Holiday Cottages
                 </h2>
-                <p>Call reservations on: +44 (0)1845 421182</p>
+                <p class="font-aleo">Call reservations on: +44 (0)1845 421182</p>
             </div>
 
             <a href="#"
-                class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[#A18E5A] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
-               View All Cottages
-              
+                class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[#3F5C47] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                View All Cottages
+
             </a>
 
         </div>
@@ -263,7 +267,8 @@
             <div class="flex items-center justify-between  md:gap-0 gap-5">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">The Granary</h3>
-                    <p class="md:text-[16px] text-[12px]">Sleeps up to 9-guests<br>Check Details</p>
+                    <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 9-guests<br> <span
+                            class="text-[#3F5C47]"> Check Details</span></p>
                 </div>
                 <div class="h-[150px] w-[400px] ">
                     <img src="assets/cottageImage1.png" alt="" class="h-full w-full object-cover rounded-lg">
@@ -272,7 +277,8 @@
             <div class="flex items-center justify-between md:gap-0 gap-8">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">The Stables</h3>
-                    <p class="md:text-[16px] text-[12px]">Sleeps up to 12 Guests<br>Check Details</p>
+                    <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 12 Guests<br><span
+                            class="text-[#3F5C47]"> Check Details</span></p>
                 </div>
                 <div class="h-[150px] w-[400px] ">
                     <img src="assets/cottageImage2.png" alt="" class="h-full w-full object-cover rounded-lg">
@@ -281,7 +287,8 @@
             <div class="flex items-center justify-between">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">Mill House</h3>
-                    <p class="md:text-[16px] text-[12px]">Sleeps up to 12 Guests - adjoins The Byre <br>Check Details</p>
+                    <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 12 Guests - adjoins The Byre <br> <span
+                            class="text-[#3F5C47]"> Check Details</span></p>
                 </div>
                 <div class="h-[150px] w-[400px]">
                     <img src="assets/cottageImage3.png" alt="" class="h-full w-full object-cover rounded-lg">
@@ -290,7 +297,8 @@
             <div class="flex items-center justify-between gap-6">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">The Byre</h3>
-                    <p class="md:text-[16px] text-[12px]">Sleeps up to 10 Guests - adjoins Mill House <br>Check Details</p>
+                    <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 10 Guests - adjoins Mill House <br>
+                        <span class="text-[#3F5C47]"> Check Details</span></p>
                 </div>
                 <div class="h-[150px] w-[400px]">
                     <img src="assets/colttageImage4.png" alt="" class="h-full w-full object-cover rounded-lg">
@@ -313,27 +321,34 @@
                     <p class="font-great-vibes text-[69px]">About Us</p>
                     <p class="font-aleo text-[15px] pb-5">Sue, Paul & Abi. Born and bred in Yorkshire.</p>
                     <div class="h-[460px] w-[315px] rounded-lg overflow-hidden">
-                         <img src="assets/aboutUsImage2.png" alt="" class="h-full w-full object-cover">
+                        <img src="assets/aboutUsImage2.png" alt="" class="h-full w-full object-cover">
                     </div>
                 </div>
             </div>
             <div class="flex flex-col gap-2 font-aleo">
-                <p>Sue started out her working life in banking, followed by stints in law and then Pest Control. Paul (originally a farmer) has  ventured into the world of grain trading but still has a pedigree herd of Long Horn Cattle keeping in with the farming tradit.</p>
+                <p>Sue started out her working life in banking, followed by stints in law and then Pest Control. Paul
+                    (originally a farmer) has ventured into the world of grain trading but still has a pedigree herd of
+                    Long Horn Cattle keeping in with the farming tradit.</p>
 
-                <p>Abi spent her final studies at Newcastle University studying Agricultural Business Management, graduating in 2025, she is now travelling Australia, New Zealand and the Far East.</p>
+                <p>Abi spent her final studies at Newcastle University studying Agricultural Business Management,
+                    graduating in 2025, she is now travelling Australia, New Zealand and the Far East.</p>
 
-                <p> We have a real passion for the countryside, rural life and our animals. Guests will meet Rhubarb and Revel the horses alongside Bella the pig (who has a racing car named after her).</p>
+                <p> We have a real passion for the countryside, rural life and our animals. Guests will meet Rhubarb and
+                    Revel the horses alongside Bella the pig (who has a racing car named after her).</p>
 
-                <p> Our cattle spend their days in the back field, if stopping in The Granary or The Stables you'll have a perfect view of them.</p>
+                <p> Our cattle spend their days in the back field, if stopping in The Granary or The Stables you'll have
+                    a perfect view of them.</p>
 
-                <p> Hattie, Nell and Margot, our family dogs provide us with much entertainment. We also have a few chickens, a duck and a goose.</p>
+                <p> Hattie, Nell and Margot, our family dogs provide us with much entertainment. We also have a few
+                    chickens, a duck and a goose.</p>
 
-                <p>I am sure that you will come across some of our extended family during your stay at Birdforth Hall.</p>
-                
+                <p>I am sure that you will come across some of our extended family during your stay at Birdforth Hall.
+                </p>
+
                 <div class="mt-19">
                     <a href="#"
-                    class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[#A18E5A] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding inline-block font-aleo">
-                   Search & Book
+                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                        Search & Book
                     </a>
                 </div>
 
@@ -347,7 +362,9 @@
         <div class="flex justify-center  gap-10">
 
             <div class="flex flex-col gap-4">
-               <div class="rounded-lg overflow-hidden h-[366px] w-[458px]"> <img src="assets/flexIamge1.jpg" alt="" class="h-full w-full object-cover"></div>
+                <div class="rounded-lg overflow-hidden h-[366px] w-[458px]">
+                    <img src="assets/flexIamge1.jpg" alt="" class="h-full w-full object-cover">
+                </div>
                 <p class="font-bold text-[24.29px]">Holiday Accommodation near York</p>
                 <div class="flex gap-2 items-center">
                     <img src="assets/Vector (14).png" alt="">
@@ -396,7 +413,8 @@
             </div>
 
             <div class="flex flex-col gap-4">
-               <div class="rounded-lg overflow-hidden h-[366px] w-[458px]"> <img src="assets/flexImage2.jpg" alt="" class="h-full w-full object-cover"></div>
+                <div class="rounded-lg overflow-hidden h-[366px] w-[458px]"> <img src="assets/flexImage2.jpg" alt=""
+                        class="h-full w-full object-cover"></div>
                 <p class="font-bold text-[24.29px]">Rural Wedding Venue North Yorkshire</p>
                 <div class="flex gap-2 items-center">
                     <img src="assets/Vector (14).png" alt="">
@@ -445,7 +463,8 @@
             </div>
 
             <div class="flex flex-col gap-4">
-               <div class="rounded-lg overflow-hidden h-[366px] w-[458px]"> <img src="assets/sliderImage5.jpg" alt="" class="h-full w-full object-cover"></div>
+                <div class="rounded-lg overflow-hidden h-[366px] w-[458px]"> <img src="assets/sliderImage5.jpg" alt=""
+                        class="h-full w-full object-cover"></div>
                 <p class="font-bold text-[24.29px]">Indoor and Outdoor Event Venue</p>
                 <div class="flex gap-2 items-center">
                     <img src="assets/Vector (14).png" alt="">
@@ -495,15 +514,16 @@
 
         </div>
     </section>
-    
+
     <!-- Reviews & Credentials section -->
-     <section class="flex flex-col items-center my-10 gap-5 relative">
+    <section class="flex flex-col items-center my-10 gap-5 relative font-aleo">
 
         <div class="absolute left-0 top-0 h-full w-[30%] bg-gradient-to-r from-white via-white/70 to-transparent"></div>
-        <div class="absolute right-0 top-0 h-full w-[30%] bg-gradient-to-l from-white via-white/70 to-transparent"></div>
+        <div class="absolute right-0 top-0 h-full w-[30%] bg-gradient-to-l from-white via-white/70 to-transparent">
+        </div>
 
         <div class="text-center">
-            <p class="text-[40px] font-bold">Reviews & Credentials</p>
+            <p class="text-[40px] font-bold font-Cormorant">Reviews & Credentials</p>
             <p class="font-aleo text-[17px]">Hear from our happy guests</p>
             <div class="flex justify-center items-center gap-4 py-4">
                 <img src="assets/elfsight2.png" alt="">
@@ -520,7 +540,9 @@
                 <div class="font-aleo">
                     <p class="text-[26.59px] font-[600]">SABRINA</p>
                     <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
-                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read More</span></p>
+                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends
+                        trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read
+                            More</span></p>
                     <div class="mt-6">
                         <img src="assets/Frame 1171276195.png" alt="">
                     </div>
@@ -534,8 +556,10 @@
                 <div class="font-aleo">
                     <p class="text-[26.59px] font-[600]">SABRINA</p>
                     <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
-                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read More</span></p>
-                    <div  class="mt-6">
+                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends
+                        trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read
+                            More</span></p>
+                    <div class="mt-6">
                         <img src="assets/Frame 1171276195.png" alt="">
                     </div>
                 </div>
@@ -548,8 +572,10 @@
                 <div class="font-aleo">
                     <p class="text-[26.59px] font-[600]">SABRINA</p>
                     <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
-                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read More</span></p>
-                    <div  class="mt-6">
+                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends
+                        trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read
+                            More</span></p>
+                    <div class="mt-6">
                         <img src="assets/Frame 1171276195.png" alt="">
                     </div>
                 </div>
@@ -566,27 +592,220 @@
             <img src="assets/Vector (11).png" alt="" class="-rotate-90">
         </div>
 
-     </section>
+    </section>
 
     <!-- crousel section -->
-     <section class="py-10 font-aleo flex flex-col gap-2">
-        <div class="text-center">
-            <p class="text-[24px] font-bold">During Your Stay</p>
-            <p>we highly recommend.</p>
+     <!-- <section class="py-20 font-aleo">
+        <div class="flex justify-center items-center">
+            <div class="flex flex-col gap-4">
+                <p class="text-[40px] font-[700] font-Cormorant">Our Suppliers</p>
+                <p>At Birdforth Hall, we're proud to work with a trusted collection of talented local wedding suppliers who know The Forge inside and out. Each has been carefully selected for their professionalism, creativity and shared commitment to delivering exceptional experiences.</p>
+                <p>From catering and floristry to photography, styling and entertainment, these suppliers understand the flow of the venue and work seamlessly together to bring your vision to life.</p>
+            </div>
         </div>
-        <div class="flex items-center justify-center gap-6">
-            <div class="rounded-full overflow">
-                <img src="" alt="">
+
+     </section> -->
+
+    <!-- during your stay section -->
+    <section class="py-10 font-aleo flex flex-col gap-2 bg-[#F7F3EA] px-20 ">
+        <div class="text-center">
+            <p class="text-[40px] font-bold font-Cormorant">During Your Stay</p>
+            <p class="text-[17px]">we highly recommend.</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-10 py-8">
+            <div class="rounded-2xl overflow-hidden">
+                <img src="assets/stayImage1.png" alt="" class="h-full w-full object-cover">
+            </div>
+            <div class="flex flex-col gap-3 font-aleo">
+                <p class="text-[30px] font-Cormorant font-[700]">Old Black Bull, Raskelf</p>
+                <p>A small traditional village pub run by the Hannah family, situated in the beautiful village of
+                    Raskelf, North Yorkshire (just off the A19 north of York). A free house, the local beers are
+                    Theakston's Best & Timothy Taylors Landlord along with a regular choice of rotating guest ales.</p>
+                <p>The menu is traditional, fresh and ethical, with all produce supplied daily from the local farms &
+                    suppliers throughout Yorkshire.</p>
+                <div class="mt-19">
+                    <a href="#"
+                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-10 py-5">
+            <div class="flex flex-col gap-3 font-aleo">
+                <p class="text-[30px] font-Cormorant font-[700]">Abbotsway Kennels</p>
+                <p>A family run business offering outstanding care for your pets in new facilities.</p>
+                <p>We have family pets of our own and are well aware that they are used to friendly company and regular
+                    attention.</p>
+                <p>Our time is given to providing for your dog's special needs including diet, exercise and play time.
+                    We are happy to administer medication if required.</p>
+                <div class="mt-19">
+                    <a href="#"
+                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                        Read More
+                    </a>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden">
+                <img src="assets/stayImage2.jpg" alt="" class="h-full w-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section id="sixth-section" class="md:py-15 py-5 md:px-40 px-10 font-Cormorant">
+        <div class="text-center">
+            <div class=" flex flex-col items-center">
+                <h2 class="md:text-[50px] text-[35px] font-[600] m-0 leading-tight ">
+                    FAQ's
+                </h2>
+                <p class="text-[18px] max-w-[800px] font-aleo">Here are a few questions that you may have about your
+                    wedding day and the planning leading up to it. If there is anything else, then please just ask.</p>
+
+            </div>
+
+            <div class="flex flex-col gap-6 pt-10">
+
+                <div class=" flex justify-between items-center">
+                    <p class="md:text-[20px] text-[18px] text-[#A18E5A]">Is the forge barn heated?</p>
+                    <div class="h-[1px] w-7 bg-[#135269]"></div>
+                </div>
+
+
+                <div class=" flex justify-between items-center pt-5">
+                    <p class="text-[20px] font-[600]">Should we take out wedding insurance?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center">
+                    <p class="text-[20px] font-[600]">Will we have exclusive use of the venue?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center">
+                    <p class="text-[20px] font-[600]">Do you allow dogs?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center">
+                    <p class="text-[20px] font-[600]">Will we be able to meet to discuss the wedding?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center">
+                    <p class="text-[20px] font-[600]">Am I able to bring family and suppliers to visit the venue?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center">
+                    <p class="text-[20px] font-[600]">Will there be someone available on the day if we have any
+                        questions?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center">
+                    <p class="text-[20px] font-[600]">Is there on site parking?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center">
+                    <p class="text-[20px] font-[600]">Is The Forge suitable for disabled/wheelchair users?</p>
+                    <div><img src="assets/plusIcon.png" alt=""></div>
+                </div>
+
+
+            </div>
+
+            <div class="mt-19">
+                <a href="#"
+                    class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                    View All
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Badge section -->
+    <section class="mx-60 bg-[#3F5C47] text-white font-aleo rounded-2xl">
+        <div class="px-6 py-8 flex items-center gap-6">
+            <div class="p-1 rounded-full bg-[linear-gradient(90deg,#C913B9_20%,#F9373F_60%,#FECD00_100%)] ">
+                <div class="bg-[#3F5C47] rounded-full">
+                    <img src="assets/Bagdeicon.png" alt="">
+                </div>
             </div>
             <div>
-                
+                <p class="font-Cormorant text-[30px] font-[700]">Birdforth Holiday Cottages & Wedding Venue</p>
+                <p class="font-Cormorant text-[18px] font-[400]">@birdforthhall</p>
+            </div>
+            <div class="flex justify-between items-center gap-8 font-aleo">
+                <div>
+                    <p class="text-[24px] font-[700]">1.1K</p>
+                    <p>Posts</p>
+                </div>
+                <div>
+                    <p class="text-[24px] font-[700]">782</p>
+                    <p>Followers</p>
+                </div>
+                <div>
+                    <p class="text-[24px] font-[700]">143</p>
+                    <p>Following</p>
+                </div>
+
+                <div>
+                    <img src="assets/Follow_button.png" alt="" class="h-[36px] w-[250px]">
+                </div>
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- footer -->
-    <section class="md:mt-100 mt-40  font-aleo ">
-        <div class="bg-[#A18E5A] w-full relative">
+    <!-- collage -->
+    <section class="mt-10">
+        <img src="assets/collage.png" alt="">
+    </section>
+
+
+    <!-- call reservation section -->
+    <section id="eight-section font-aleo"
+        class="md:my-20 md:mx-50 bg-[#F7F3EA] rounded-3xl relative overflow-hidden flex flex-col py-15 md:px-20 px-5 gap-10 relative">
+        <div>
+            <img src="assets/logo.png" alt="" class="h-[88px] inline">
+        </div>
+
+        <div class="text-[#3F5C47] z-10 flex flex-col ">
+            <h2 class="md:text-[30px] text-[20px] font-semibold mb-5">CALL RESERVATIONS ON: +44 (0)1845 421182</h2>
+
+            <div>
+                <a href="#"
+                    class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                    Book Your Luxury Cottage
+                </a>
+            </div>
+
+        </div>
+        <!-- Overlay Design -->
+        <div class="md:block hidden h-[158px] w-[158px] bg-[#F5E7C8A3] rounded-full absolute -right-25 bottom-26 z-9"></div>
+        <div class="md:block hidden h-[296px] w-[297px] bg-[#978A65] rounded-full absolute -right-43 bottom-11 z-8"></div>
+        <div class="md:block hidden h-[370px] w-[370px] bg-[#F5E7C8F3] rounded-full absolute -right-42 bottom-1 z-7"></div>
+        <div class="md:block hidden h-[426px] w-[426px] bg-[#B3A98E] rounded-full absolute -right-40 -bottom-6 z-6"></div>
+        <div class="md:block hidden h-[436px] w-[436px] bg-[#F5E7C8] rounded-full absolute -right-25 -bottom-6 z-5"></div>
+        <div class="md:block hidden h-[426px] w-[426px] bg-[#DED5BC] rounded-full absolute -right-4 -bottom-6 z-4"></div>
+
+
+    </section>
+
+    <!-- footer -->
+    <section class="md:mt-100 mt-40 font-aleo ">
+        <div class="bg-[#3F5C47] w-full relative">
             <!-- overlay map image -->
             <div class="absolute md:p-5 md:-top-80 -top-30 md:left-15 md:mx-10 mx-5 h-full w-[90%]  ">
                 <img src="assets/map.png" alt=""
@@ -597,7 +816,8 @@
 
                 <div class=" flex flex-col md:place-items-start place-items-center md:gap-3 gap-5 ">
                     <img src="assets/logo2footer.png" alt="" class="h-14 m-5">
-                    <p class="md:text-start text-center ">Welcome to Birdforth Hall Holiday Cottages and Wedding Venue, York</p>
+                    <p class="md:text-start text-center ">Welcome to Birdforth Hall Holiday Cottages and Wedding Venue,
+                        York</p>
                     <div class="flex gap-5">
                         <img src="assets/elfsight2.png" alt=""
                             class=" md:h-[90px] h-[60px] p-2 bg-[#FFFFFFE5] rounded-lg border-t-3 border-black">
@@ -606,7 +826,7 @@
                     </div>
                     <p>Follow Us</p>
                     <div class="flex gap-3 items-center">
-                        <img src="assets/facebook.png" alt="" >
+                        <img src="assets/facebook.png" alt="">
                         <img src="assets/insta.png" alt="" class="p-2">
                     </div>
 
@@ -670,7 +890,7 @@
                     </div>
 
 
-                  
+
                 </div>
 
             </div>
@@ -692,7 +912,6 @@
         </div>
 
     </section>
-
 
     <script src="script.js"></script>
 </body>
