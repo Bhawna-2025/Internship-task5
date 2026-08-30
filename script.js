@@ -36,3 +36,21 @@ setInterval(() => {
 
     showingFirst = !showingFirst;
 }, 3000);
+
+let toggleMenu = document.querySelector("#hiddenMenu")
+let menubar_desktop = document.querySelector("#menubar_desktop")
+let menubar_mobile = document.querySelector("#menubar2")
+let cross = document.querySelector("#cross")
+
+menubar_desktop.addEventListener("click",()=>{
+    toggleMenu.classList.toggle("translate-x-full");
+    toggleMenu.classList.toggle("opacity-0");
+})
+menubar_mobile.addEventListener("click",()=>{
+    toggleMenu.classList.toggle("translate-x-full");
+    toggleMenu.classList.toggle("opacity-0");
+})
+cross.addEventListener("click",()=>{
+    toggleMenu.classList.toggle("translate-x-full")
+    toggleMenu.classList.toggle("opacity-0");
+})

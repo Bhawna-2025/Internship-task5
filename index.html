@@ -18,6 +18,7 @@
         @theme{
             --font-aleo : "Aleo", sans-serif;
             --font-great-vibes : "Great Vibes" , cursive;
+            --font-fustat:"Fustat",sans-serif;
             --font-Cormorant:"Cormorant" , sans-serif;
         }
     </style>
@@ -55,7 +56,7 @@
         <!-- Header containing Top Bar and Navigation -->
         <header class="relative z-50 w-full md:pt-5 pt-2">
 
-            <div class="flex justify-between items-center md:px-20 px-5 pb-3 font-aleo text-[#FFFFFF] ">
+            <div class="flex justify-between items-center md:px-20 px-5 pb-3 font-fustat text-[#FFFFFF] ">
                 <div class="flex md:flex-row flex-col gap-2">
                     <p class="md:text-[16px] text-[12px]">Follow Us On</p>
                     <div class="flex gap-3">
@@ -80,11 +81,13 @@
 
             <!-- Navigation -->
             <nav
-                class="flex justify-between items-center md:px-10 px-3 bg-[#FFFFFF] rounded-full md:mx-10 mx-2 md:py-1 py-2 shadow-sm backdrop-blur-sm">
+                class="flex justify-between items-center md:px-10 px-3 bg-[#F7F3EA] rounded-full md:mx-10 mx-2 md:py-1 py-2 shadow-sm backdrop-blur-sm font-aleo">
+
                 <div>
                     <img src="assets/logo.png" alt="Universal Ultrasound Diagnostics Logo"
                         class="md:h-[70px] h-[40px] md:w-auto">
                 </div>
+
                 <div id="nav_links"
                     class=" md:flex md:flex-row flex-col md:static absolute items-center md:gap-6 -top-20 -right-2 md:bg-transparent bg-[#FFFFFFE6] text-[#4C4848] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5  md:py-0 py-6 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
 
@@ -94,7 +97,7 @@
                             <img src="assets/hamburger.png" alt="Menu" class="h-8">
                         </button>
                     </div>
-                    <div class=" flex md:flex-row flex-col gap-6 font-aleo">
+                    <div class=" flex md:flex-row flex-col gap-6 ">
                         <div class="flex items-center gap-1 hover:opacity-80 transition-opacity ">
                             <a href="/diagnosticScans.html" class="font-bold text-[14px]">Our Cottages</a>
                             <img src="assets/Vector (11).png" alt="Dropdown">
@@ -139,41 +142,40 @@
                 <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden cursor-pointer ">
                     <img src="assets/hamburger.png" alt="Menu" class="h-[44px]">
                 </button>
+
             </nav>
 
             <!-- hidden toggle menu -->
             <div id="hiddenMenu"
-                class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFF9E] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen">
-                <div id="cross">
-                    <img src="assets/Vector (2).png" alt="">
+                class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFFCC] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen font-fustat">
+                <div id="cross" class="cursor-pointer border-2 border-transparent hover:border-2 hover:border-[#3F5C47]">
+                    <img src="assets/cross.png" alt="">
                 </div>
                 <img src="assets/logo.png" alt="" class="h-[73px] ml-22">
                 <div class="flex items-center gap-2">
-                    <img src="assets/Group 125.png  " alt="">
-                    <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
+                    <img src="assets/location.png" alt="">
+                    <p class="max-w-80">Birdforth Hall Holiday Cottages, Birdforth, N.Yorks YO61 4NW</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <img src="assets/ic_baseline-phone (1).png" alt="">
-                    <p>0121 392 3112</p>
+                    <img src="assets/phoneicon.png" alt="">
+                    <p>+44 (0)1845 421182</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <img src="assets/Group 127.png" alt="">
-                    <p>admin@ultrasounddiagnostic.co.uk</p>
+                    <img src="assets/mailIcon.png" alt="">
+                    <p>enquiries@birdforthhall.co.uk</p>
                 </div>
 
 
                 <div class="mt-8 flex gap-5">
-                    <a href="#" class="bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] py-2 md:px-6 px-4 rounded-full text-white font-semibold md:text-[20px] text-[14px] flex items-center gap-2  hover:bg-none duration-400 border-2 border-transparent hover:border-2 hover:border-[#0E0F3D] transition-opacity cursor-pointer group duration-300 transition-all bg-clip-padding
-                hover:text-[#0E0F3D] ">
-                        Contact Us
-                        <img src="assets/right-arrow-svgrepo-com 2.png" alt="Right Arrow"
-                            class="group-hover:invert transition-all">
+                    <a href="#"
+                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] border-white hover:border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47]  transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                        Search & Book
                     </a>
-                    <a href="/team.html"
-                        class="md:py-3 py-2 md:px-6 px-4 rounded-full md:text-[20px] text-[14px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[linear-gradient(90deg,#0E0F3D_15%,#2F6080_25%,#4DACD4_35%)] hover:text-white transition-colors cursor-pointer group hover:border-transparent duration-300 transition-all bg-clip-padding">
-                        Meet The Team
-                        <img src="assets/right-arrow-svgrepo-com 2 (1).png" alt="Right Arrow"
-                            class="group-hover:brightness-0 group-hover:invert transition-all">
+
+                    <a href="#"
+                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[#3F5C47] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                        Contact Us
+
                     </a>
                 </div>
 
@@ -188,8 +190,8 @@
                 <h1 class="md:text-[102.25px] text-[40px] font-[400] m-0 leading-lg font-great-vibes">
                     Welcome
                 </h1>
-                <h2 class="md:text-[45px] text-[15px] font-[700]  m-0 leading-tight max-w-xl font-aleo">
-                    to Birdforth Hall Holiday Cottages and Wedding Venue, York
+                <h2 class="md:text-[57.84px] text-[15px] font-[700]  m-0 leading-tight max-w-2xl font-Cormorant">
+                    To Birdforth Hall Holiday Cottages and Wedding Venue, York
                 </h2>
                 <p class="md:text-[18px] text-[14px]  font-[400] mt-6 max-w-xl font-aleo">
                     Set within beautiful rural surroundings and steeped in history. Birdforth Hall offers the perfect
@@ -200,7 +202,7 @@
 
             <div class="flex  md:gap-8 gap-4 items-center md:mt-5 mt-9 font-aleo">
                 <div>
-                   <a href="#"
+                    <a href="#"
                         class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] border-white flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white  transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
                         Search & Book
                     </a>
@@ -249,14 +251,14 @@
 
         <div class="flex md:flex-row flex-col md:gap-0 gap-3 justify-between items-center">
             <div>
-                <h2 class=" md:text-[50px] text-[35px] font-[800] text-[#000000]  m-0 leading-tight inline ">
+                <h2 class=" md:text-[50px] text-[35px] font-[800] text-[#000000]  m-0 leading-tight inline font-Cormorant ">
                     Our Fabulous Holiday Cottages
                 </h2>
                 <p class="font-aleo">Call reservations on: +44 (0)1845 421182</p>
             </div>
 
             <a href="#"
-                class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[#3F5C47] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding">
+                class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#0E0F3D] flex items-center gap-2 hover:bg-[#3F5C47] hover:text-white transition-colors cursor-pointer duration-300 transition-all group hover:border-transparent bg-clip-padding font-aleo">
                 View All Cottages
 
             </a>
@@ -298,7 +300,8 @@
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">The Byre</h3>
                     <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 10 Guests - adjoins Mill House <br>
-                        <span class="text-[#3F5C47]"> Check Details</span></p>
+                        <span class="text-[#3F5C47]"> Check Details</span>
+                    </p>
                 </div>
                 <div class="h-[150px] w-[400px]">
                     <img src="assets/colttageImage4.png" alt="" class="h-full w-full object-cover rounded-lg">
@@ -317,7 +320,7 @@
                     <img src="assets/aboutUsImage1.png" alt="" class="h-full w-full object-cover">
                 </div>
                 <div class="flex flex-col gap-0">
-                    <img src="assets/aboutusImage3.png" alt="" class="h-[45px] w-[74px]">
+                    <img src="assets/aboutusImage3.png" alt="" class="h-[48px] w-[90px]">
                     <p class="font-great-vibes text-[69px]">About Us</p>
                     <p class="font-aleo text-[15px] pb-5">Sue, Paul & Abi. Born and bred in Yorkshire.</p>
                     <div class="h-[460px] w-[315px] rounded-lg overflow-hidden">
@@ -325,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-2 font-aleo">
+            <div class="flex flex-col gap-2 font-aleo text-[18px]">
                 <p>Sue started out her working life in banking, followed by stints in law and then Pest Control. Paul
                     (originally a farmer) has ventured into the world of grain trading but still has a pedigree herd of
                     Long Horn Cattle keeping in with the farming tradit.</p>
@@ -595,16 +598,35 @@
     </section>
 
     <!-- crousel section -->
-     <!-- <section class="py-20 font-aleo">
-        <div class="flex justify-center items-center">
+    <section class="py-20 font-aleo ">
+        <div class="flex justify-between items-end gap-80 px-10 pb-4">
             <div class="flex flex-col gap-4">
                 <p class="text-[40px] font-[700] font-Cormorant">Our Suppliers</p>
                 <p>At Birdforth Hall, we're proud to work with a trusted collection of talented local wedding suppliers who know The Forge inside and out. Each has been carefully selected for their professionalism, creativity and shared commitment to delivering exceptional experiences.</p>
                 <p>From catering and floristry to photography, styling and entertainment, these suppliers understand the flow of the venue and work seamlessly together to bring your vision to life.</p>
             </div>
+            <div class="flex gap-2">
+                <a href="" class="border-2 border-[#3F5C47] rounded-sm h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (15).png" alt="" class="h-[80%]"></a>
+                <a href="" class="border-2 border-[#FFFFFF] rounded-sm bg-[#3F5C47] h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (16).png" alt="" class=" h-[80%] "></a>
+            </div>
         </div>
+        <div class="pl-10 flex gap-10">
+          <div>
+            <div class="rounded-xl h-[411px] w-[935px] overflow-hidden">
+                <img src="assets/crouserlImage1.png" alt="" class=" h-full w-full object-cover">
+            </div>
+              <p class="font-Cormorant text-[40px] font-bold mt-6">F4D Events</p>
+          </div>
+           <div>
+            <div class="rounded-xl h-[411px] w-[935px] overflow-hidden">
+                <img src="assets/crouselImage2.png" alt="" class=" h-full w-full object-cover">
+            </div>
+              <p class="font-Cormorant text-[40px] font-bold mt-6">Yvonne Dennis Event Florist</p>
+          </div>
+        </div>
+        
 
-     </section> -->
+     </section>
 
     <!-- during your stay section -->
     <section class="py-10 font-aleo flex flex-col gap-2 bg-[#F7F3EA] px-20 ">
@@ -617,14 +639,14 @@
             <div class="rounded-2xl overflow-hidden">
                 <img src="assets/stayImage1.png" alt="" class="h-full w-full object-cover">
             </div>
-            <div class="flex flex-col gap-3 font-aleo">
+            <div class="flex flex-col gap-3 font-aleo text-[18px]">
                 <p class="text-[30px] font-Cormorant font-[700]">Old Black Bull, Raskelf</p>
-                <p>A small traditional village pub run by the Hannah family, situated in the beautiful village of
+                <p >A small traditional village pub run by the Hannah family, situated in the beautiful village of
                     Raskelf, North Yorkshire (just off the A19 north of York). A free house, the local beers are
                     Theakston's Best & Timothy Taylors Landlord along with a regular choice of rotating guest ales.</p>
                 <p>The menu is traditional, fresh and ethical, with all produce supplied daily from the local farms &
                     suppliers throughout Yorkshire.</p>
-                <div class="mt-19">
+                <div class="mt-10">
                     <a href="#"
                         class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
                         Read More
@@ -634,14 +656,14 @@
         </div>
 
         <div class="grid grid-cols-2 gap-10 py-5">
-            <div class="flex flex-col gap-3 font-aleo">
+            <div class="flex flex-col gap-3 font-aleo text-[18px]">
                 <p class="text-[30px] font-Cormorant font-[700]">Abbotsway Kennels</p>
                 <p>A family run business offering outstanding care for your pets in new facilities.</p>
                 <p>We have family pets of our own and are well aware that they are used to friendly company and regular
                     attention.</p>
                 <p>Our time is given to providing for your dog's special needs including diet, exercise and play time.
                     We are happy to administer medication if required.</p>
-                <div class="mt-19">
+                <div class="mt-10">
                     <a href="#"
                         class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
                         Read More
@@ -669,56 +691,56 @@
             <div class="flex flex-col gap-6 pt-10">
 
                 <div class=" flex justify-between items-center">
-                    <p class="md:text-[20px] text-[18px] text-[#A18E5A]">Is the forge barn heated?</p>
-                    <div class="h-[1px] w-7 bg-[#135269]"></div>
+                    <p class="md:text-[20px] text-[18px] text-[#A18E5A] font-bold">Is the forge barn heated?</p>
+                    <div class="h-[1.5px] w-7 bg-[#135269] mr-6"></div>
                 </div>
 
 
                 <div class=" flex justify-between items-center pt-5">
-                    <p class="text-[20px] font-[600]">Should we take out wedding insurance?</p>
+                    <p class="text-[25px] font-[600]">Should we take out wedding insurance?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-[600]">Will we have exclusive use of the venue?</p>
+                    <p class="text-[25px] font-[600]">Will we have exclusive use of the venue?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-[600]">Do you allow dogs?</p>
+                    <p class="text-[25px] font-[600]">Do you allow dogs?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-[600]">Will we be able to meet to discuss the wedding?</p>
+                    <p class="text-[25px] font-[600]">Will we be able to meet to discuss the wedding?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-[600]">Am I able to bring family and suppliers to visit the venue?</p>
+                    <p class="text-[25px] font-[600]">Am I able to bring family and suppliers to visit the venue?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-[600]">Will there be someone available on the day if we have any
+                    <p class="text-[25px] font-[600]">Will there be someone available on the day if we have any
                         questions?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-[600]">Is there on site parking?</p>
+                    <p class="text-[25px] font-[600]">Is there on site parking?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
                 <div class=" flex justify-between items-center">
-                    <p class="text-[20px] font-[600]">Is The Forge suitable for disabled/wheelchair users?</p>
+                    <p class="text-[25px] font-[600]">Is The Forge suitable for disabled/wheelchair users?</p>
                     <div><img src="assets/plusIcon.png" alt=""></div>
                 </div>
 
@@ -793,26 +815,32 @@
 
         </div>
         <!-- Overlay Design -->
-        <div class="md:block hidden h-[158px] w-[158px] bg-[#F5E7C8A3] rounded-full absolute -right-25 bottom-26 z-9"></div>
-        <div class="md:block hidden h-[296px] w-[297px] bg-[#978A65] rounded-full absolute -right-43 bottom-11 z-8"></div>
-        <div class="md:block hidden h-[370px] w-[370px] bg-[#F5E7C8F3] rounded-full absolute -right-42 bottom-1 z-7"></div>
-        <div class="md:block hidden h-[426px] w-[426px] bg-[#B3A98E] rounded-full absolute -right-40 -bottom-6 z-6"></div>
-        <div class="md:block hidden h-[436px] w-[436px] bg-[#F5E7C8] rounded-full absolute -right-25 -bottom-6 z-5"></div>
-        <div class="md:block hidden h-[426px] w-[426px] bg-[#DED5BC] rounded-full absolute -right-4 -bottom-6 z-4"></div>
+        <div class="md:block hidden h-[158px] w-[158px] bg-[#F5E7C8A3] rounded-full absolute -right-25 bottom-26 z-9">
+        </div>
+        <div class="md:block hidden h-[296px] w-[297px] bg-[#978A65] rounded-full absolute -right-43 bottom-11 z-8">
+        </div>
+        <div class="md:block hidden h-[370px] w-[370px] bg-[#F5E7C8F3] rounded-full absolute -right-42 bottom-1 z-7">
+        </div>
+        <div class="md:block hidden h-[426px] w-[426px] bg-[#B3A98E] rounded-full absolute -right-40 -bottom-6 z-6">
+        </div>
+        <div class="md:block hidden h-[436px] w-[436px] bg-[#F5E7C8] rounded-full absolute -right-25 -bottom-6 z-5">
+        </div>
+        <div class="md:block hidden h-[426px] w-[426px] bg-[#DED5BC] rounded-full absolute -right-4 -bottom-6 z-4">
+        </div>
 
 
     </section>
 
     <!-- footer -->
-    <section class="md:mt-100 mt-40 font-aleo ">
+    <section class="md:mt-80 mt-40 font-aleo ">
         <div class="bg-[#3F5C47] w-full relative">
             <!-- overlay map image -->
-            <div class="absolute md:p-5 md:-top-80 -top-30 md:left-15 md:mx-10 mx-5 h-full w-[90%]  ">
+            <div class="absolute md:p-5 md:-top-60 -top-30 md:left-15 md:mx-10 mx-5 h-full w-[90%]  ">
                 <img src="assets/map.png" alt=""
                     class="md:h-[55%] h-[10%] w-[95%] object-cover md:border-15 border-10 border-white rounded-2xl">
             </div>
 
-            <div class="grid  md:grid-cols-[1fr_3fr]  gap-20 text-white md:pt-45 pt-25 md:px-20 px-5">
+            <div class="grid  md:grid-cols-[1fr_3fr]  gap-20 text-white md:pt-35 pt-25 md:px-20 px-5">
 
                 <div class=" flex flex-col md:place-items-start place-items-center md:gap-3 gap-5 ">
                     <img src="assets/logo2footer.png" alt="" class="h-14 m-5">
@@ -832,12 +860,12 @@
 
                 </div>
 
-                <div class=" grid md:grid-cols-[1fr_1fr_1fr_1fr] gap-8">
+                <div class=" grid md:grid-cols-[1fr_1fr_1fr_1fr] gap-15 px-10">
 
                     <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
-                            <img src="assets/Group 39.png" alt="">
-                            <p class="text-[18px] font-bold">Contact Us</p>
+                            <img src="assets/footerlocationicon.png" alt="" >
+                            <p class="text-[20px] font-bold font-Cormorant">Contact Us</p>
                         </div>
                         <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
                         <div class="flex gap-2 items-center">
@@ -852,41 +880,39 @@
 
                     <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
-                            <img src="assets/hearticon.png" alt="">
-                            <p class="text-[18px] font-bold">Our Cottages</p>
+                            <img src="assets/footerCottageicon.png" alt="">
+                            <p class="text-[20px] font-bold font-Cormorant">Our Cottages</p>
                         </div>
-                        <p>Diagnostic Scans</p>
-                        <p>Paediatric Scans</p>
-                        <p>Pregnancy Scans</p>
-                        <p>Fertility Scans </p>
+                        <p>All Our Cottages</p>
+                        <p>The Granary</p>
+                        <p>Mill House</p>
+                        <p>The Stables</p>
+                        <p>The Byre</p>
                     </div>
 
 
                     <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
-                            <img src="assets/mingcute_link-fill.png" alt="">
-                            <p class="text-[18px] font-bold">Weddings</p>
+                            <img src="assets/footerweddingicon.png" alt="">
+                            <p class="text-[20px] font-bold font-Cormorant">Weddings</p>
                         </div>
-                        <a href="#" class="cursor-pointer">Pregnancy Digital Bundle</a>
-                        <a href="#" class="cursor-pointer"> Meet The Team</a>
-                        <a href="#" class="cursor-pointer"> Wellness Clinic</a>
-                        <a href="#" class="cursor-pointer">Sonography Mentorship</a>
+                        <a href="#" class="cursor-pointer">Wedding Packages</a>
+                        <a href="#" class="cursor-pointer">Our Suppliers</a>
+                        <a href="#" class="cursor-pointer"> Optional Extras</a>
+                        <a href="#" class="cursor-pointer">FAQ's</a>
+                        <a href="#" class="cursor-pointer">Term & Conditions</a>
                     </div>
 
 
                     <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
-                            <img src="assets/mdi_legal.png" alt="">
-                            <p class="text-[18px] font-bold">Your Stay</p>
+                            <img src="assets/fotterusericon.png" alt="">
+                            <p class="text-[20px] font-bold font-Cormorant">Your Stay</p>
                         </div>
-                        <p>Complaints Procedure</p>
-                        <p> Terms and Conditions</p>
-                        <p>Clinical Safety Policy</p>
-                        <p>Equality and Diversity Policy</p>
-                        <p>Modern Slavery Policy</p>
-                        <p>Digital Products Refund Policy</p>
-                        <p>and Terms and Conditions</p>
-                        <p>Company Number 14186755</p>
+                            <p>Optional Extras</p>
+                           <p> Pizza Shack</p>
+                           <p> We Recommend</p>
+                           <p> Term & Conditions </p>  
                     </div>
 
 
@@ -896,7 +922,7 @@
             </div>
 
             <div class="text-white pt-10">
-                <div class="h-[0.08px] bg-[#24445D] w-full"></div>
+                <div class="h-[0.08px] bg-[#FFFFFF] w-full"></div>
                 <div class="flex justify-between items-center  md:px-10 px-3 py-5">
                     <div>
                         <p class="md:text-[16px] text-[12px] opacity-80">© 2026 Universal Ultrasound Group. All Rights
