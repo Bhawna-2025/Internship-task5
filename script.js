@@ -37,20 +37,50 @@ setInterval(() => {
     showingFirst = !showingFirst;
 }, 3000);
 
-let toggleMenu = document.querySelector("#hiddenMenu")
-let menubar_desktop = document.querySelector("#menubar_desktop")
-let menubar_mobile = document.querySelector("#menubar2")
-let cross = document.querySelector("#cross")
+let navLinks = document.querySelector("#nav_links");
+let hiddenMenu = document.querySelector("#hiddenMenu");
+let menubar_desktop = document.querySelector("#menubar_desktop");
+let menubar2 = document.querySelector("#menubar2");
+let menubar_mobile = document.querySelector("#menubar_mobile");
+let cross = document.querySelector("#cross");
+let close_nav_links = document.querySelector("#close_nav_links");
 
-menubar_desktop.addEventListener("click",()=>{
-    toggleMenu.classList.toggle("translate-x-full");
-    toggleMenu.classList.toggle("opacity-0");
-})
-menubar_mobile.addEventListener("click",()=>{
-    toggleMenu.classList.toggle("translate-x-full");
-    toggleMenu.classList.toggle("opacity-0");
-})
-cross.addEventListener("click",()=>{
-    toggleMenu.classList.toggle("translate-x-full")
-    toggleMenu.classList.toggle("opacity-0");
-})
+// 1. Mobile main nav button (#menubar2) -> slides #nav_links in from the right
+if (menubar2 && navLinks) {
+    menubar2.addEventListener("click", () => {
+        navLinks.classList.remove("translate-x-full", "opacity-0");
+        navLinks.classList.add("translate-x-0", "opacity-100");
+    });
+}
+
+// 2. Close icon inside #nav_links (#close_nav_links) -> hides #nav_links
+if (close_nav_links && navLinks) {
+    close_nav_links.addEventListener("click", () => {
+        navLinks.classList.add("translate-x-full", "opacity-0");
+        navLinks.classList.remove("translate-x-0", "opacity-100");
+    });
+}
+
+// 3. Mobile menu button inside #nav_links (#menubar_mobile) -> slides #hiddenMenu in from the right
+if (menubar_mobile && hiddenMenu) {
+    menubar_mobile.addEventListener("click", () => {
+        hiddenMenu.classList.remove("translate-x-full", "opacity-0");
+        hiddenMenu.classList.add("-translate-x-93", "opacity-100");
+    });
+}
+
+// 4. Desktop menu button (#menubar_desktop) -> slides #hiddenMenu in from the right
+if (menubar_desktop && hiddenMenu) {
+    menubar_desktop.addEventListener("click", () => {
+        hiddenMenu.classList.remove("translate-x-full", "opacity-0");
+        hiddenMenu.classList.add("translate-x-0", "opacity-100");
+    });
+}
+
+// 5. Close icon inside #hiddenMenu (#cross) -> hides #hiddenMenu
+if (cross && hiddenMenu) {
+    cross.addEventListener("click", () => {
+        hiddenMenu.classList.add("translate-x-full", "opacity-0");
+        hiddenMenu.classList.remove("translate-x-0", "opacity-100");
+    });
+}

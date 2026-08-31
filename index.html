@@ -89,15 +89,15 @@
                 </div>
 
                 <div id="nav_links"
-                    class=" md:flex md:flex-row flex-col md:static absolute items-center md:gap-6 -top-20 -right-2 md:bg-transparent bg-[#FFFFFFE6] text-[#4C4848] md:backdrop-blur-none backdrop-blur-md md:px-0 px-5  md:py-0 py-6 md:translate-x-0 translate-x-full md:opacity-100 opacity-0 transition-all duration-500 ease-in-out md:h-0 h-screen ">
+                    class="fixed -top-20 -right-2 z-50 h-screen w-72 bg-[#FFFFFFF8] text-[#4C4848] backdrop-blur-md px-6 py-6 flex flex-col items-start justify-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out shadow-2xl md:static md:top-auto md:right-auto md:z-auto md:h-auto md:w-auto md:bg-transparent md:px-0 md:py-0 md:flex-row md:items-center md:gap-6 md:translate-x-0 md:opacity-100 md:shadow-none md:backdrop-blur-none">
 
-                    <div id="cross2" class="md:hidden flex items-center justify-between mb-10">
-                        <img src="assets/Vector (11).png" alt="" class="cursor-pointor">
-                        <button id="menubar_mobile" class=" menubar_mobile focus:outline-none cursor-pointer ">
-                            <img src="assets/hamburger.png" alt="Menu" class="h-8">
+                    <div id="cross2" class="md:hidden flex items-center justify-between w-full mb-6">
+                        <img src="assets/cross.png" alt="Close" id="close_nav_links" class="h-6 w-6 cursor-pointer hover:opacity-80">
+                        <button id="menubar_mobile" class="menubar_mobile focus:outline-none cursor-pointer">
+                            <img src="assets/hamburger.png" alt="Menu" class="h-7">
                         </button>
                     </div>
-                    <div class=" flex md:flex-row flex-col gap-6 ">
+                    <div class=" flex md:flex-row flex-col gap-6 w-full md:w-auto">
                         <div class="flex items-center gap-1 hover:opacity-80 transition-opacity ">
                             <a href="/diagnosticScans.html" class="font-bold text-[14px]">Our Cottages</a>
                             <img src="assets/Vector (11).png" alt="Dropdown">
@@ -133,14 +133,14 @@
                         <!-- menu bar for desktop view -->
                         <button id="menubar_desktop"
                             class="menubar_desktop focus:outline-none cursor-pointer md:block hidden cursor-pointer">
-                            <img src="assets/hamburger.png" alt="Menu" class="h-5">
+                            <img src="assets/hamburger.png" alt="Menu" class="md:h-5 h-3">
                         </button>
                     </div>
                 </div>
 
                 <!-- Menu bar for mobile view  -->
                 <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden cursor-pointer ">
-                    <img src="assets/hamburger.png" alt="Menu" class="h-[44px]">
+                    <img src="assets/hamburger.png" alt="Menu" class="h-5">
                 </button>
 
             </nav>
@@ -187,7 +187,7 @@
         <main class="relative z-20 flex flex-col mt-12 pb-20 text-white px-10 ">
 
             <div class=" max-w-4xl  md:py-10">
-                <h1 class="md:text-[102.25px] text-[40px] font-[400] m-0 leading-lg font-great-vibes">
+                <h1 class="md:text-[102.25px] text-[40px] font-[400] m-0 leading-lg font-great-vibes md:text-start text-center">
                     Welcome
                 </h1>
                 <h2 class="md:text-[57.84px] text-[15px] font-[700]  m-0 leading-tight max-w-2xl font-Cormorant">
@@ -203,7 +203,7 @@
             <div class="flex  md:gap-8 gap-4 items-center md:mt-5 mt-9 font-aleo">
                 <div>
                     <a href="#"
-                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] border-white flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white  transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                        class="md:py-4 py-1 md:px-10 px-2 md:text-[18px] text-[10px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] border-white flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white  transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
                         Search & Book
                     </a>
                 </div>
@@ -222,7 +222,7 @@
             </div>
 
             <!-- photframes -->
-            <div class="absolute right-60 top-8 h-110 w-140  ">
+            <div class="absolute md:block hidden right-60 top-8 h-110 w-140  ">
                 <div class="absolute -top-2 left-[30%] rotate-1 ">
                     <img src="assets/photoframehead.png" alt="">
                 </div>
@@ -232,7 +232,7 @@
                 </div>
             </div>
 
-            <div class="absolute right-20 bottom-40 h-60 w-90  z-200  ">
+            <div class="absolute md:block hidden right-20 bottom-40 h-60 w-90  z-200  ">
                 <div class="absolute -top-2 left-[25%] rotate-1">
                     <img src="assets/photoframehead.png" alt="" class="h-7">
                 </div>
@@ -249,7 +249,8 @@
     <!-- Our Fabulous Holiday Cottages section -->
     <section id="third-section" class=" w-full pt-20 md:px-15 px-10 py-20 relative ">
 
-        <div class="flex md:flex-row flex-col md:gap-0 gap-3 justify-between items-center">
+        <div class="flex md:flex-row flex-col md:gap-0 gap-4 justify-between items-center">
+
             <div>
                 <h2 class=" md:text-[50px] text-[35px] font-[800] text-[#000000]  m-0 leading-tight inline font-Cormorant ">
                     Our Fabulous Holiday Cottages
@@ -266,36 +267,40 @@
         </div>
 
         <div class="grid md:grid-cols-2 grid-cols-1 gap-10 mt-15">
+
             <div class="flex items-center justify-between  md:gap-0 gap-5">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">The Granary</h3>
                     <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 9-guests<br> <span
                             class="text-[#3F5C47]"> Check Details</span></p>
                 </div>
-                <div class="h-[150px] w-[400px] ">
+                <div class="md:h-[150px] h-[100px] md:w-[400px] w-[130px] ">
                     <img src="assets/cottageImage1.png" alt="" class="h-full w-full object-cover rounded-lg">
                 </div>
             </div>
+
             <div class="flex items-center justify-between md:gap-0 gap-8">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">The Stables</h3>
                     <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 12 Guests<br><span
                             class="text-[#3F5C47]"> Check Details</span></p>
                 </div>
-                <div class="h-[150px] w-[400px] ">
+                <div class="md:h-[150px] h-[100px] md:w-[400px] w-[130px]  ">
                     <img src="assets/cottageImage2.png" alt="" class="h-full w-full object-cover rounded-lg">
                 </div>
             </div>
+
             <div class="flex items-center justify-between">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">Mill House</h3>
                     <p class="md:text-[16px] text-[12px] font-aleo">Sleeps up to 12 Guests - adjoins The Byre <br> <span
                             class="text-[#3F5C47]"> Check Details</span></p>
                 </div>
-                <div class="h-[150px] w-[400px]">
+                <div class="md:h-[150px] h-[100px] md:w-[400px] w-[180px]">
                     <img src="assets/cottageImage3.png" alt="" class="h-full w-full object-cover rounded-lg">
                 </div>
             </div>
+
             <div class="flex items-center justify-between gap-6">
                 <div>
                     <h3 class="md:text-[25px] text-[20px] font-[700]">The Byre</h3>
@@ -303,7 +308,7 @@
                         <span class="text-[#3F5C47]"> Check Details</span>
                     </p>
                 </div>
-                <div class="h-[150px] w-[400px]">
+                <div class="md:h-[150px] h-[100px] md:w-[400px] w-[190px]">
                     <img src="assets/colttageImage4.png" alt="" class="h-full w-full object-cover rounded-lg">
                 </div>
             </div>
@@ -313,9 +318,9 @@
     </section>
 
     <!-- About us -->
-    <section class="bg-[#F8F8F1] md:py-20 md:px-10">
-        <div class="flex justify-between  gap-20">
-            <div class="flex justify-between gap-7">
+    <section class="bg-[#F8F8F1] md:py-20 py-10 md:px-10">
+        <div class="flex md:flex-row flex-col justify-between items-center  md:gap-20 gap-10">
+            <div class="flex md:flex-row flex-col justify-between items-center gap-7">
                 <div class="h-[658px] w-[358px] rounded-lg overflow-hidden">
                     <img src="assets/aboutUsImage1.png" alt="" class="h-full w-full object-cover">
                 </div>
@@ -328,7 +333,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-2 font-aleo text-[18px]">
+            <div class="flex flex-col gap-2 font-aleo text-[18px] md:px-0 px-4">
                 <p>Sue started out her working life in banking, followed by stints in law and then Pest Control. Paul
                     (originally a farmer) has ventured into the world of grain trading but still has a pedigree herd of
                     Long Horn Cattle keeping in with the farming tradit.</p>
@@ -348,7 +353,7 @@
                 <p>I am sure that you will come across some of our extended family during your stay at Birdforth Hall.
                 </p>
 
-                <div class="mt-19">
+                <div class="md:mt-19 mt-10">
                     <a href="#"
                         class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
                         Search & Book
@@ -361,157 +366,163 @@
     </section>
 
     <!--  -->
-    <section class="md:py-20 md:px-10">
-        <div class="flex justify-center  gap-10">
+    <section class="md:py-20  md:px-10">
+        <div class="flex md:flex-row flex-col justify-center  gap-10">
 
             <div class="flex flex-col gap-4">
-                <div class="rounded-lg overflow-hidden h-[366px] w-[458px]">
-                    <img src="assets/flexIamge1.jpg" alt="" class="h-full w-full object-cover">
+                <div class="rounded-lg overflow-hidden md:h-[366px] md:w-[458px]">
+                    <img src="assets/flexIamge1.jpg" alt="" class="h-full w-full object-cover ">
                 </div>
-                <p class="font-bold text-[24.29px]">Holiday Accommodation near York</p>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Superfast WIFI (all cottages)</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Stunning rural location</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Ample private parking</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">20 minutes north of York, outside Easingwold, towards Thirsk</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Great location for families</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Suitable for all ages (ground floor bedroom with en-suite available)</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Disabled access and single storey accommodation available</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Heated indoor swimming pool</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Private Gardens</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Hot tubs with all cottages</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">DIY Pizza shack</p>
+                <div class="flex flex-col gap-2 md:px-0 px-5">
+                    <p class="font-bold text-[24.29px]">Holiday Accommodation near York</p>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Superfast WIFI (all cottages)</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Stunning rural location</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Ample private parking</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">20 minutes north of York, outside Easingwold, towards Thirsk</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Great location for families</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Suitable for all ages (ground floor bedroom with en-suite available)</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Disabled access and single storey accommodation available</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Heated indoor swimming pool</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Private Gardens</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Hot tubs with all cottages</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">DIY Pizza shack</p>
+                    </div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-4">
-                <div class="rounded-lg overflow-hidden h-[366px] w-[458px]"> <img src="assets/flexImage2.jpg" alt=""
+                <div class="rounded-lg overflow-hidden md:h-[366px] md:w-[458px]"> <img src="assets/flexImage2.jpg" alt=""
                         class="h-full w-full object-cover"></div>
-                <p class="font-bold text-[24.29px]">Rural Wedding Venue North Yorkshire</p>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Superfast WIFI (all cottages)</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Stunning rural location</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Ample private parking</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">20 minutes north of York, outside Easingwold, towards Thirsk</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Great location for families</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Suitable for all ages (ground floor bedroom with en-suite available)</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Disabled access and single storey accommodation available</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Heated indoor swimming pool</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Private Gardens</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Hot tubs with all cottages</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">DIY Pizza shack</p>
+                     <div class="flex flex-col gap-2 md:px-0 px-5">
+                    <p class="font-bold text-[24.29px]">Holiday Accommodation near York</p>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Superfast WIFI (all cottages)</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Stunning rural location</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Ample private parking</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">20 minutes north of York, outside Easingwold, towards Thirsk</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Great location for families</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Suitable for all ages (ground floor bedroom with en-suite available)</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Disabled access and single storey accommodation available</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Heated indoor swimming pool</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Private Gardens</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Hot tubs with all cottages</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">DIY Pizza shack</p>
+                    </div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-4">
-                <div class="rounded-lg overflow-hidden h-[366px] w-[458px]"> <img src="assets/sliderImage5.jpg" alt=""
+                <div class="rounded-lg overflow-hidden md:h-[366px] md:w-[458px]"> <img src="assets/sliderImage5.jpg" alt=""
                         class="h-full w-full object-cover"></div>
-                <p class="font-bold text-[24.29px]">Indoor and Outdoor Event Venue</p>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Superfast WIFI (all cottages)</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Stunning rural location</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Ample private parking</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">20 minutes north of York, outside Easingwold, towards Thirsk</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Great location for families</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Suitable for all ages (ground floor bedroom with en-suite available)</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Disabled access and single storey accommodation available</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Heated indoor swimming pool</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Private Gardens</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">Hot tubs with all cottages</p>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <img src="assets/Vector (14).png" alt="">
-                    <p class="font-aleo">DIY Pizza shack</p>
+                    <div class="flex flex-col gap-2 md:px-0 px-5">
+                    <p class="font-bold text-[24.29px]">Holiday Accommodation near York</p>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Superfast WIFI (all cottages)</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Stunning rural location</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Ample private parking</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">20 minutes north of York, outside Easingwold, towards Thirsk</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Great location for families</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Suitable for all ages (ground floor bedroom with en-suite available)</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Disabled access and single storey accommodation available</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Heated indoor swimming pool</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Private Gardens</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">Hot tubs with all cottages</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/Vector (14).png" alt="">
+                        <p class="font-aleo">DIY Pizza shack</p>
+                    </div>
                 </div>
             </div>
 
@@ -521,20 +532,20 @@
     <!-- Reviews & Credentials section -->
     <section class="flex flex-col items-center my-10 gap-5 relative font-aleo">
 
-        <div class="absolute left-0 top-0 h-full w-[30%] bg-gradient-to-r from-white via-white/70 to-transparent"></div>
-        <div class="absolute right-0 top-0 h-full w-[30%] bg-gradient-to-l from-white via-white/70 to-transparent">
+        <div class="absolute md:block hidden left-0 top-0 h-full w-[30%] bg-gradient-to-r from-white via-white/70 to-transparent"></div>
+        <div class="absolute md:block hidden right-0 top-0 h-full w-[30%] bg-gradient-to-l from-white via-white/70 to-transparent">
         </div>
 
         <div class="text-center">
-            <p class="text-[40px] font-bold font-Cormorant">Reviews & Credentials</p>
+            <p class="md:text-[40px] text-[30px] font-bold font-Cormorant">Reviews & Credentials</p>
             <p class="font-aleo text-[17px]">Hear from our happy guests</p>
             <div class="flex justify-center items-center gap-4 py-4">
                 <img src="assets/elfsight2.png" alt="">
-                <img src="assets/Image1.png" alt="" class="h-15">
+                <img src="assets/Image1.png" alt="" class="md:h-15 h-14">
             </div>
         </div>
 
-        <div id="crousel" class="flex justify-center items-center gap-10">
+        <div id="crousel" class="flex justify-center items-center gap-10 ">
 
             <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
                 <div class="rounded-full h-[60px] w-[170px] overflow-hidden">
@@ -598,30 +609,30 @@
     </section>
 
     <!-- crousel section -->
-    <section class="py-20 font-aleo ">
-        <div class="flex justify-between items-end gap-80 px-10 pb-4">
+    <section class="md:py-20 py-10 font-aleo ">
+        <div class="flex md:flex-row flex-col justify-between items-end md:gap-80 gap-10 md:px-10 px-5 pb-4">
             <div class="flex flex-col gap-4">
                 <p class="text-[40px] font-[700] font-Cormorant">Our Suppliers</p>
                 <p>At Birdforth Hall, we're proud to work with a trusted collection of talented local wedding suppliers who know The Forge inside and out. Each has been carefully selected for their professionalism, creativity and shared commitment to delivering exceptional experiences.</p>
                 <p>From catering and floristry to photography, styling and entertainment, these suppliers understand the flow of the venue and work seamlessly together to bring your vision to life.</p>
             </div>
             <div class="flex gap-2">
-                <a href="" class="border-2 border-[#3F5C47] rounded-sm h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (15).png" alt="" class="h-[80%]"></a>
-                <a href="" class="border-2 border-[#FFFFFF] rounded-sm bg-[#3F5C47] h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (16).png" alt="" class=" h-[80%] "></a>
+                <div class="border-2 border-[#3F5C47] rounded-sm h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (15).png" alt="" class="h-[80%]"></div>
+                <div class="border-2 border-[#FFFFFF] rounded-sm bg-[#3F5C47] h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (16).png" alt="" class=" h-[80%] "></div>
             </div>
         </div>
-        <div class="pl-10 flex gap-10">
+        <div class="md:pl-10 pl-6 flex md:gap-10 gap-5 overflow-hidden">
           <div>
-            <div class="rounded-xl h-[411px] w-[935px] overflow-hidden">
+            <div class="md:rounded-xl rounded-lg md:h-[411px] h-[140px] md:w-[935px] w-[200px] overflow-hidden">
                 <img src="assets/crouserlImage1.png" alt="" class=" h-full w-full object-cover">
             </div>
-              <p class="font-Cormorant text-[40px] font-bold mt-6">F4D Events</p>
+              <p class="font-Cormorant md:text-[40px] text-[17px] font-bold md:mt-6 mt-4">F4D Events</p>
           </div>
            <div>
-            <div class="rounded-xl h-[411px] w-[935px] overflow-hidden">
+            <div class="md:rounded-xl rounded-lg   md:h-[411px] h-[140px] md:w-[935px] w-[200px] overflow-hidden">
                 <img src="assets/crouselImage2.png" alt="" class=" h-full w-full object-cover">
             </div>
-              <p class="font-Cormorant text-[40px] font-bold mt-6">Yvonne Dennis Event Florist</p>
+              <p class="font-Cormorant md:text-[40px] text-[17px] font-bold md:mt-6 mt-4">Yvonne Dennis Event Florist</p>
           </div>
         </div>
         
@@ -629,13 +640,13 @@
      </section>
 
     <!-- during your stay section -->
-    <section class="py-10 font-aleo flex flex-col gap-2 bg-[#F7F3EA] px-20 ">
+    <section class="py-10 font-aleo flex flex-col gap-2 bg-[#F7F3EA] md:px-20 px-5 ">
         <div class="text-center">
-            <p class="text-[40px] font-bold font-Cormorant">During Your Stay</p>
+            <p class="md:text-[40px] text-[30px] font-bold font-Cormorant">During Your Stay</p>
             <p class="text-[17px]">we highly recommend.</p>
         </div>
 
-        <div class="grid grid-cols-2 gap-10 py-8">
+        <div class="grid md:grid-cols-2 gap-10 py-8">
             <div class="rounded-2xl overflow-hidden">
                 <img src="assets/stayImage1.png" alt="" class="h-full w-full object-cover">
             </div>
@@ -655,8 +666,8 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-10 py-5">
-            <div class="flex flex-col gap-3 font-aleo text-[18px]">
+        <div class="grid md:grid-cols-2 gap-10 py-5">
+            <div class="flex flex-col gap-3 font-aleo text-[18px] md:order-1 order-2">
                 <p class="text-[30px] font-Cormorant font-[700]">Abbotsway Kennels</p>
                 <p>A family run business offering outstanding care for your pets in new facilities.</p>
                 <p>We have family pets of our own and are well aware that they are used to friendly company and regular
@@ -670,78 +681,78 @@
                     </a>
                 </div>
             </div>
-            <div class="rounded-2xl overflow-hidden">
+            <div class="rounded-2xl overflow-hidden md:order-2 order-1">
                 <img src="assets/stayImage2.jpg" alt="" class="h-full w-full object-cover">
             </div>
         </div>
     </section>
 
     <!-- FAQ section -->
-    <section id="sixth-section" class="md:py-15 py-5 md:px-40 px-10 font-Cormorant">
-        <div class="text-center">
+    <section id="sixth-section" class="md:py-15 py-5 md:px-40 px-7 font-Cormorant">
+        <div class="md:text-center">
             <div class=" flex flex-col items-center">
                 <h2 class="md:text-[50px] text-[35px] font-[600] m-0 leading-tight ">
                     FAQ's
                 </h2>
-                <p class="text-[18px] max-w-[800px] font-aleo">Here are a few questions that you may have about your
+                <p class="md:text-[18px] max-w-[800px] font-aleo text-center">Here are a few questions that you may have about your
                     wedding day and the planning leading up to it. If there is anything else, then please just ask.</p>
 
             </div>
 
             <div class="flex flex-col gap-6 pt-10">
 
-                <div class=" flex justify-between items-center">
+                <div class=" flex justify-between md:items-center gap-4">
                     <p class="md:text-[20px] text-[18px] text-[#A18E5A] font-bold">Is the forge barn heated?</p>
-                    <div class="h-[1.5px] w-7 bg-[#135269] mr-6"></div>
+                    <div class="h-[1.5px] md:w-9 w-5 bg-[#135269] md:mr-6 shrink-0"></div>
                 </div>
 
 
-                <div class=" flex justify-between items-center pt-5">
-                    <p class="text-[25px] font-[600]">Should we take out wedding insurance?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
-                </div>
-
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center">
-                    <p class="text-[25px] font-[600]">Will we have exclusive use of the venue?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
+                <div class=" flex justify-between items-center pt-5 gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Should we take out wedding insurance?</p>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center">
-                    <p class="text-[25px] font-[600]">Do you allow dogs?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
+                <div class=" flex justify-between items-center gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Will we have exclusive use of the venue?</p>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center">
-                    <p class="text-[25px] font-[600]">Will we be able to meet to discuss the wedding?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
+                <div class=" flex justify-between items-center gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Do you allow dogs?</p>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center">
-                    <p class="text-[25px] font-[600]">Am I able to bring family and suppliers to visit the venue?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
+                <div class=" flex justify-between items-center gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Will we be able to meet to discuss the wedding?</p>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center">
-                    <p class="text-[25px] font-[600]">Will there be someone available on the day if we have any
+                <div class=" flex justify-between items-center gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Am I able to bring family and suppliers to visit the venue?</p>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                </div>
+
+                <div class="h-[1px] w-full bg-[#66828D]"></div>
+                <div class=" flex justify-between items-center gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Will there be someone available on the day if we have any
                         questions?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center">
-                    <p class="text-[25px] font-[600]">Is there on site parking?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
+                <div class=" flex justify-between items-center gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Is there on site parking?</p>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
                 </div>
 
                 <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center">
-                    <p class="text-[25px] font-[600]">Is The Forge suitable for disabled/wheelchair users?</p>
-                    <div><img src="assets/plusIcon.png" alt=""></div>
+                <div class=" flex justify-between items-center gap-4">
+                    <p class="md:text-[25px] text-[18px] font-[600]">Is The Forge suitable for disabled/wheelchair users?</p>
+                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
                 </div>
 
 
@@ -758,28 +769,32 @@
     </section>
 
     <!-- Badge section -->
-    <section class="mx-60 bg-[#3F5C47] text-white font-aleo rounded-2xl">
-        <div class="px-6 py-8 flex items-center gap-6">
-            <div class="p-1 rounded-full bg-[linear-gradient(90deg,#C913B9_20%,#F9373F_60%,#FECD00_100%)] ">
-                <div class="bg-[#3F5C47] rounded-full">
-                    <img src="assets/Bagdeicon.png" alt="">
+    <section class="md:mx-60 bg-[#3F5C47] text-white font-aleo md:rounded-2xl">
+        <div class="px-6 py-8 flex md:flex-row flex-col items-center md:gap-6 gap-3">
+            <div class="flex items-center gap-6">
+                <div class="p-1 rounded-full bg-[linear-gradient(90deg,#C913B9_20%,#F9373F_60%,#FECD00_100%)] ">
+                    <div class="bg-[#3F5C47] rounded-full">
+                        <img src="assets/Bagdeicon.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <p class="font-Cormorant md:text-[30px] text-[18px] font-[700]">Birdforth Holiday Cottages & Wedding Venue</p>
+                    <p class="font-Cormorant text-[18px] font-[400]">@birdforthhall</p>
                 </div>
             </div>
-            <div>
-                <p class="font-Cormorant text-[30px] font-[700]">Birdforth Holiday Cottages & Wedding Venue</p>
-                <p class="font-Cormorant text-[18px] font-[400]">@birdforthhall</p>
-            </div>
-            <div class="flex justify-between items-center gap-8 font-aleo">
+
+
+            <div class="flex justify-between items-center md:gap-8 gap-5 font-aleo">
                 <div>
-                    <p class="text-[24px] font-[700]">1.1K</p>
+                    <p class="md:text-[24px] font-[700]">1.1K</p>
                     <p>Posts</p>
                 </div>
                 <div>
-                    <p class="text-[24px] font-[700]">782</p>
+                    <p class="md:text-[24px] font-[700]">782</p>
                     <p>Followers</p>
                 </div>
                 <div>
-                    <p class="text-[24px] font-[700]">143</p>
+                    <p class="md:text-[24px] font-[700]">143</p>
                     <p>Following</p>
                 </div>
 
@@ -798,13 +813,13 @@
 
     <!-- call reservation section -->
     <section id="eight-section font-aleo"
-        class="md:my-20 md:mx-50 bg-[#F7F3EA] rounded-3xl relative overflow-hidden flex flex-col py-15 md:px-20 px-5 gap-10 relative">
+        class="md:my-20 my-10 md:mx-50 bg-[#F7F3EA] rounded-3xl relative overflow-hidden flex flex-col py-15 md:px-20 px-5 gap-10 relative">
         <div>
-            <img src="assets/logo.png" alt="" class="h-[88px] inline">
+            <img src="assets/logo.png" alt="" class="h-[88px] inline ">
         </div>
 
         <div class="text-[#3F5C47] z-10 flex flex-col ">
-            <h2 class="md:text-[30px] text-[20px] font-semibold mb-5">CALL RESERVATIONS ON: +44 (0)1845 421182</h2>
+            <h2 class="md:text-[30px] text-[18px] font-semibold mb-5">CALL RESERVATIONS ON: +44 (0)1845 421182</h2>
 
             <div>
                 <a href="#"
@@ -836,8 +851,8 @@
         <div class="bg-[#3F5C47] w-full relative">
             <!-- overlay map image -->
             <div class="absolute md:p-5 md:-top-60 -top-30 md:left-15 md:mx-10 mx-5 h-full w-[90%]  ">
-                <img src="assets/map.png" alt=""
-                    class="md:h-[55%] h-[10%] w-[95%] object-cover md:border-15 border-10 border-white rounded-2xl">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7004.029901607593!2d77.38176975603638!3d28.629314006965398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1788154814172!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="md:h-[55%] h-[10%] w-[95%] object-cover md:border-15 border-10 border-white rounded-2xl"></iframe>></iframe>
             </div>
 
             <div class="grid  md:grid-cols-[1fr_3fr]  gap-20 text-white md:pt-35 pt-25 md:px-20 px-5">
@@ -860,7 +875,7 @@
 
                 </div>
 
-                <div class=" grid md:grid-cols-[1fr_1fr_1fr_1fr] gap-15 px-10">
+                <div class=" grid md:grid-cols-[1fr_1fr_1fr_1fr] gap-15 md:px-10">
 
                     <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
