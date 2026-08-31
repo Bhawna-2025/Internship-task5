@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- swiper js cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <style type="text/tailwindcss">
         @theme{
@@ -92,9 +98,10 @@
                     class="fixed -top-20 -right-2 z-50 h-screen w-72 bg-[#FFFFFFF8] text-[#4C4848] backdrop-blur-md px-6 py-6 flex flex-col items-start justify-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out shadow-2xl md:static md:top-auto md:right-auto md:z-auto md:h-auto md:w-auto md:bg-transparent md:px-0 md:py-0 md:flex-row md:items-center md:gap-6 md:translate-x-0 md:opacity-100 md:shadow-none md:backdrop-blur-none">
 
                     <div id="cross2" class="md:hidden flex items-center justify-between w-full mb-6">
-                        <img src="assets/cross.png" alt="Close" id="close_nav_links" class="h-6 w-6 cursor-pointer hover:opacity-80">
+                        <img src="assets/cross.png" alt="Close" id="close_nav_links"
+                            class="h-6 w-6 cursor-pointer hover:opacity-80">
                         <button id="menubar_mobile" class="menubar_mobile focus:outline-none cursor-pointer">
-                            <img src="assets/hamburger.png" alt="Menu" class="h-7">
+                            <img src="assets/hamburger.png" alt="Menu" class="h-4">
                         </button>
                     </div>
                     <div class=" flex md:flex-row flex-col gap-6 w-full md:w-auto">
@@ -140,7 +147,7 @@
 
                 <!-- Menu bar for mobile view  -->
                 <button id="menubar2" class="focus:outline-none cursor-pointer md:hidden cursor-pointer ">
-                    <img src="assets/hamburger.png" alt="Menu" class="h-5">
+                    <img src="assets/hamburger.png" alt="Menu" class="h-4">
                 </button>
 
             </nav>
@@ -148,7 +155,8 @@
             <!-- hidden toggle menu -->
             <div id="hiddenMenu"
                 class="toggleMenu fixed z-[100] top-0 right-0 px-5 py-10 bg-[#FFFFFFCC] backdrop-blur-md rounded-2xl flex flex-col items-start gap-6 translate-x-full opacity-0 transition-all duration-500 ease-in-out h-screen font-fustat">
-                <div id="cross" class="cursor-pointer border-2 border-transparent hover:border-2 hover:border-[#3F5C47]">
+                <div id="cross"
+                    class="cursor-pointer border-2 border-transparent hover:border-2 hover:border-[#3F5C47]">
                     <img src="assets/cross.png" alt="">
                 </div>
                 <img src="assets/logo.png" alt="" class="h-[73px] ml-22">
@@ -187,7 +195,8 @@
         <main class="relative z-20 flex flex-col mt-12 pb-20 text-white px-10 ">
 
             <div class=" max-w-4xl  md:py-10">
-                <h1 class="md:text-[102.25px] text-[40px] font-[400] m-0 leading-lg font-great-vibes md:text-start text-center">
+                <h1
+                    class="md:text-[102.25px] text-[40px] font-[400] m-0 leading-lg font-great-vibes md:text-start text-center">
                     Welcome
                 </h1>
                 <h2 class="md:text-[57.84px] text-[15px] font-[700]  m-0 leading-tight max-w-2xl font-Cormorant">
@@ -252,7 +261,8 @@
         <div class="flex md:flex-row flex-col md:gap-0 gap-4 justify-between items-center">
 
             <div>
-                <h2 class=" md:text-[50px] text-[35px] font-[800] text-[#000000]  m-0 leading-tight inline font-Cormorant ">
+                <h2
+                    class=" md:text-[50px] text-[35px] font-[800] text-[#000000]  m-0 leading-tight inline font-Cormorant ">
                     Our Fabulous Holiday Cottages
                 </h2>
                 <p class="font-aleo">Call reservations on: +44 (0)1845 421182</p>
@@ -423,9 +433,9 @@
             </div>
 
             <div class="flex flex-col gap-4">
-                <div class="rounded-lg overflow-hidden md:h-[366px] md:w-[458px]"> <img src="assets/flexImage2.jpg" alt=""
-                        class="h-full w-full object-cover"></div>
-                     <div class="flex flex-col gap-2 md:px-0 px-5">
+                <div class="rounded-lg overflow-hidden md:h-[366px] md:w-[458px]"> <img src="assets/flexImage2.jpg"
+                        alt="" class="h-full w-full object-cover"></div>
+                <div class="flex flex-col gap-2 md:px-0 px-5">
                     <p class="font-bold text-[24.29px]">Holiday Accommodation near York</p>
                     <div class="flex gap-2 items-center">
                         <img src="assets/Vector (14).png" alt="">
@@ -475,9 +485,9 @@
             </div>
 
             <div class="flex flex-col gap-4">
-                <div class="rounded-lg overflow-hidden md:h-[366px] md:w-[458px]"> <img src="assets/sliderImage5.jpg" alt=""
-                        class="h-full w-full object-cover"></div>
-                    <div class="flex flex-col gap-2 md:px-0 px-5">
+                <div class="rounded-lg overflow-hidden md:h-[366px] md:w-[458px]"> <img src="assets/sliderImage5.jpg"
+                        alt="" class="h-full w-full object-cover"></div>
+                <div class="flex flex-col gap-2 md:px-0 px-5">
                     <p class="font-bold text-[24.29px]">Holiday Accommodation near York</p>
                     <div class="flex gap-2 items-center">
                         <img src="assets/Vector (14).png" alt="">
@@ -532,8 +542,11 @@
     <!-- Reviews & Credentials section -->
     <section class="flex flex-col items-center my-10 gap-5 relative font-aleo">
 
-        <div class="absolute md:block hidden left-0 top-0 h-full w-[30%] bg-gradient-to-r from-white via-white/70 to-transparent"></div>
-        <div class="absolute md:block hidden right-0 top-0 h-full w-[30%] bg-gradient-to-l from-white via-white/70 to-transparent">
+        <div
+            class="absolute md:block hidden left-0 top-0 h-full w-[20%] bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none">
+        </div>
+        <div
+            class="absolute md:block hidden right-0 top-0 h-full w-[20%] bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none">
         </div>
 
         <div class="text-center">
@@ -545,66 +558,118 @@
             </div>
         </div>
 
-        <div id="crousel" class="flex justify-center items-center gap-10 ">
+        <div id="crousel" class="swiper ">
 
-            <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
-                <div class="rounded-full h-[60px] w-[170px] overflow-hidden">
-                    <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
-                </div>
-                <div class="font-aleo">
-                    <p class="text-[26.59px] font-[600]">SABRINA</p>
-                    <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
-                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends
-                        trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read
-                            More</span></p>
-                    <div class="mt-6">
-                        <img src="assets/Frame 1171276195.png" alt="">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide ">
+                    <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
+                        <div class="rounded-full h-[60px] w-[60px] shrink-0 overflow-hidden">
+                            <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="font-aleo">
+                            <p class="text-[26.59px] font-[600]">SABRINA</p>
+                            <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
+                            <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our
+                                friends
+                                trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold">
+                                    Read
+                                    More</span></p>
+                            <div class="mt-6">
+                                <img src="assets/Frame 1171276195.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
-                <div class="rounded-full h-[60px] w-[170px] overflow-hidden">
-                    <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
-                </div>
-                <div class="font-aleo">
-                    <p class="text-[26.59px] font-[600]">SABRINA</p>
-                    <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
-                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends
-                        trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read
-                            More</span></p>
-                    <div class="mt-6">
-                        <img src="assets/Frame 1171276195.png" alt="">
+                <div class="swiper-slide">
+                    <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
+                        <div class="rounded-full h-[60px] w-[60px] shrink-0 overflow-hidden">
+                            <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="font-aleo">
+                            <p class="text-[26.59px] font-[600]">SABRINA</p>
+                            <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
+                            <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our
+                                friends
+                                trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold">
+                                    Read
+                                    More</span></p>
+                            <div class="mt-6">
+                                <img src="assets/Frame 1171276195.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
-                <div class="rounded-full h-[60px] w-[170px] overflow-hidden">
-                    <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
-                </div>
-                <div class="font-aleo">
-                    <p class="text-[26.59px] font-[600]">SABRINA</p>
-                    <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
-                    <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our friends
-                        trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold"> Read
-                            More</span></p>
-                    <div class="mt-6">
-                        <img src="assets/Frame 1171276195.png" alt="">
+                <div class="swiper-slide">
+                    <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
+                        <div class="rounded-full h-[60px] w-[60px] shrink-0 overflow-hidden">
+                            <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="font-aleo">
+                            <p class="text-[26.59px] font-[600]">SABRINA</p>
+                            <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
+                            <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our
+                                friends
+                                trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold">
+                                    Read
+                                    More</span></p>
+                            <div class="mt-6">
+                                <img src="assets/Frame 1171276195.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="swiper-slide">
+                    <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
+                        <div class="rounded-full h-[60px] w-[60px] shrink-0 overflow-hidden">
+                            <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="font-aleo">
+                            <p class="text-[26.59px] font-[600]">SABRINA</p>
+                            <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
+                            <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our
+                                friends
+                                trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold">
+                                    Read
+                                    More</span></p>
+                            <div class="mt-6">
+                                <img src="assets/Frame 1171276195.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="flex gap-5 bg-[#F8F8F1] rounded-2xl px-5 py-10">
+                        <div class="rounded-full h-[60px] w-[60px] shrink-0 overflow-hidden">
+                            <img src="assets/dp1.png" alt="" class="h-full w-full object-cover">
+                        </div>
+                        <div class="font-aleo">
+                            <p class="text-[26.59px] font-[600]">SABRINA</p>
+                            <p class="text-[#B9B9B9]">MARCH 24, 2024</p>
+                            <p>A beautiful home with fantastic hosts! The pool and hot tub were a massive bonus for our
+                                friends
+                                trip up to Yorkshire. Only a half hour... <span class="text-[#A18E5A] font-semibold">
+                                    Read
+                                    More</span></p>
+                            <div class="mt-6">
+                                <img src="assets/Frame 1171276195.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
 
         </div>
 
-        <div class="flex justify-center items-center gap-3">
-            <img src="assets/Vector (11).png" alt="" class="rotate-90">
-            <input type="radio" class="text-[#A18E5A]">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <img src="assets/Vector (11).png" alt="" class="-rotate-90">
-        </div>
 
     </section>
 
@@ -613,31 +678,72 @@
         <div class="flex md:flex-row flex-col justify-between items-end md:gap-80 gap-10 md:px-10 px-5 pb-4">
             <div class="flex flex-col gap-4">
                 <p class="text-[40px] font-[700] font-Cormorant">Our Suppliers</p>
-                <p>At Birdforth Hall, we're proud to work with a trusted collection of talented local wedding suppliers who know The Forge inside and out. Each has been carefully selected for their professionalism, creativity and shared commitment to delivering exceptional experiences.</p>
-                <p>From catering and floristry to photography, styling and entertainment, these suppliers understand the flow of the venue and work seamlessly together to bring your vision to life.</p>
+                <p>At Birdforth Hall, we're proud to work with a trusted collection of talented local wedding suppliers
+                    who know The Forge inside and out. Each has been carefully selected for their professionalism,
+                    creativity and shared commitment to delivering exceptional experiences.</p>
+                <p>From catering and floristry to photography, styling and entertainment, these suppliers understand the
+                    flow of the venue and work seamlessly together to bring your vision to life.</p>
             </div>
             <div class="flex gap-2">
-                <div class="border-2 border-[#3F5C47] rounded-sm h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (15).png" alt="" class="h-[80%]"></div>
-                <div class="border-2 border-[#FFFFFF] rounded-sm bg-[#3F5C47] h-[40px] w-[40px] flex items-center justify-center"><img src="assets/Vector (16).png" alt="" class=" h-[80%] "></div>
+                <div id="supplier-prev"
+                    class="border-2 border-[#3F5C47] rounded-sm h-[40px] w-[40px] flex items-center justify-center cursor-pointer hover:bg-[#3F5C47]/10 transition-colors">
+                    <img src="assets/Vector (15).png" alt="" class="h-[80%]">
+                </div>
+                <div id="supplier-next"
+                    class="border-2 border-[#FFFFFF] rounded-sm bg-[#3F5C47] h-[40px] w-[40px] flex items-center justify-center cursor-pointer hover:bg-[#3F5C47]/90 transition-colors">
+                    <img src="assets/Vector (16).png" alt="" class=" h-[80%] ">
+                </div>
             </div>
         </div>
-        <div class="md:pl-10 pl-6 flex md:gap-10 gap-5 overflow-hidden">
-          <div>
-            <div class="md:rounded-xl rounded-lg md:h-[411px] h-[140px] md:w-[935px] w-[200px] overflow-hidden">
-                <img src="assets/crouserlImage1.png" alt="" class=" h-full w-full object-cover">
-            </div>
-              <p class="font-Cormorant md:text-[40px] text-[17px] font-bold md:mt-6 mt-4">F4D Events</p>
-          </div>
-           <div>
-            <div class="md:rounded-xl rounded-lg   md:h-[411px] h-[140px] md:w-[935px] w-[200px] overflow-hidden">
-                <img src="assets/crouselImage2.png" alt="" class=" h-full w-full object-cover">
-            </div>
-              <p class="font-Cormorant md:text-[40px] text-[17px] font-bold md:mt-6 mt-4">Yvonne Dennis Event Florist</p>
-          </div>
-        </div>
-        
 
-     </section>
+        <div class="swiper mySwiper2 w-full overflow-hidden mt-6">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div>
+                        <div class="md:rounded-xl rounded-lg md:h-[411px] h-[200px] w-full overflow-hidden">
+                            <img src="assets/crouserlImage1.png" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <p class="font-Cormorant md:text-[40px] text-[20px] font-bold md:mt-6 mt-4">F4D Events</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <div class="md:rounded-xl rounded-lg md:h-[411px] h-[200px] w-full overflow-hidden">
+                            <img src="assets/crouselImage2.png" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <p class="font-Cormorant md:text-[40px] text-[20px] font-bold md:mt-6 mt-4">Yvonne Dennis Event
+                            Florist</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <div class="md:rounded-xl rounded-lg md:h-[411px] h-[200px] w-full overflow-hidden">
+                            <img src="assets/crouserlImage1.png" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <p class="font-Cormorant md:text-[40px] text-[20px] font-bold md:mt-6 mt-4">Yvonne Dennis Event
+                            Florist</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <div class="md:rounded-xl rounded-lg md:h-[411px] h-[200px] w-full overflow-hidden">
+                            <img src="assets/crouselImage2.png" alt="" class=" h-full w-full object-cover">
+                        </div>
+                        <p class="font-Cormorant md:text-[40px] text-[20px] font-bold md:mt-6 mt-4">Yvonne Dennis Event
+                            Florist</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination2 text-center mt-6"></div>
+        </div>
+
+
+    </section>
 
     <!-- during your stay section -->
     <section class="py-10 font-aleo flex flex-col gap-2 bg-[#F7F3EA] md:px-20 px-5 ">
@@ -652,7 +758,7 @@
             </div>
             <div class="flex flex-col gap-3 font-aleo text-[18px]">
                 <p class="text-[30px] font-Cormorant font-[700]">Old Black Bull, Raskelf</p>
-                <p >A small traditional village pub run by the Hannah family, situated in the beautiful village of
+                <p>A small traditional village pub run by the Hannah family, situated in the beautiful village of
                     Raskelf, North Yorkshire (just off the A19 north of York). A free house, the local beers are
                     Theakston's Best & Timothy Taylors Landlord along with a regular choice of rotating guest ales.</p>
                 <p>The menu is traditional, fresh and ethical, with all produce supplied daily from the local farms &
@@ -694,78 +800,111 @@
                 <h2 class="md:text-[50px] text-[35px] font-[600] m-0 leading-tight ">
                     FAQ's
                 </h2>
-                <p class="md:text-[18px] max-w-[800px] font-aleo text-center">Here are a few questions that you may have about your
+                <p class="md:text-[18px] max-w-[800px] font-aleo text-center">Here are a few questions that you may have
+                    about your
                     wedding day and the planning leading up to it. If there is anything else, then please just ask.</p>
 
             </div>
 
-            <div class="flex flex-col gap-6 pt-10">
+            <div class="flex flex-col gap-6 pt-10 text-start">
 
-                <div class=" flex justify-between md:items-center gap-4">
-                    <p class="md:text-[20px] text-[18px] text-[#A18E5A] font-bold">Is the forge barn heated?</p>
-                    <div class="h-[1.5px] md:w-9 w-5 bg-[#135269] md:mr-6 shrink-0"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Should we take out wedding insurance?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">It your choice, but we would suggest you to take it at the right time for future!</p>
+                    </div>
                 </div>
 
-
-                <div class=" flex justify-between items-center pt-5 gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Should we take out wedding insurance?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Will we have exclusive use of the venue?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">Yes, you and your guests will have full exclusive use of the venue during your booking.</p>
+                    </div>
                 </div>
 
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Will we have exclusive use of the venue?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Do you allow dogs?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">Yes, we are dog-friendly! you can check our managment work!</p>
+                    </div>
                 </div>
 
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Do you allow dogs?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Will we be able to meet to discuss the wedding?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">Absolutely! We arrange meeting and plannings before the wedding so taht everything would go smoothly.</p>
+                    </div>
                 </div>
 
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Will we be able to meet to discuss the wedding?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Am I able to bring family and suppliers to visit the venue?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">Yes, you are welcome to bring family members and supplier to go through to this place.</p>
+                    </div>
                 </div>
 
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Am I able to bring family and suppliers to visit the venue?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Will there be someone available on the day if we have any questions?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">Our venue coordinator and staff will be available throughout your event day to assist you.</p>
+                    </div>
                 </div>
 
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Will there be someone available on the day if we have any
-                        questions?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Is there on site parking?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">Yes, parking is available for all hosts and guests.</p>
+                    </div>
                 </div>
 
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Is there on site parking?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
+                <div class="faq-item flex flex-col gap-3 pb-4 border-b border-[#66828D]">
+                    <div class="faq-question flex justify-between items-center gap-4 cursor-pointer">
+                        <p class="md:text-[25px] text-[18px] font-[600]">Is The Forge suitable for disabled/wheelchair users?</p>
+                        <div class="plus shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon"
+                                class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain transition-transform duration-300"></div>
+                    </div>
+                    <div class="hidden_content hidden transition-all duration-300 pt-2">
+                        <p class="md:text-[18px] text-[16px] text-[#A18E5A] font-aleo">Yes, The Forge is on the groundfloor , which is totally available for the disabled people.</p>
+                    </div>
                 </div>
-
-                <div class="h-[1px] w-full bg-[#66828D]"></div>
-                <div class=" flex justify-between items-center gap-4">
-                    <p class="md:text-[25px] text-[18px] font-[600]">Is The Forge suitable for disabled/wheelchair users?</p>
-                    <div class="shrink-0"><img src="assets/plusIcon.png" alt="Plus Icon" class="w-6 h-6 md:w-9 md:h-9 shrink-0 object-contain"></div>
-                </div>
-
-
             </div>
 
-            <div class="mt-19">
-                <a href="#"
-                    class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
-                    View All
-                </a>
-            </div>
+                <div class="mt-19">
+                    <a href="#"
+                        class="md:py-4 py-2 md:px-10 px-4 text-[18px] text-[#0E0F3D] font-semibold border-2 border-[#3F5C47] flex items-center gap-2 bg-[#3F5C47] hover:bg-transparent text-white hover:text-[#3F5C47] transition-colors cursor-pointer duration-300 transition-all group  bg-clip-padding inline-block font-aleo">
+                        View All
+                    </a>
+                </div>
 
-        </div>
+            </div>
     </section>
 
     <!-- Badge section -->
@@ -778,7 +917,8 @@
                     </div>
                 </div>
                 <div>
-                    <p class="font-Cormorant md:text-[30px] text-[18px] font-[700]">Birdforth Holiday Cottages & Wedding Venue</p>
+                    <p class="font-Cormorant md:text-[30px] text-[18px] font-[700]">Birdforth Holiday Cottages & Wedding
+                        Venue</p>
                     <p class="font-Cormorant text-[18px] font-[400]">@birdforthhall</p>
                 </div>
             </div>
@@ -852,7 +992,11 @@
             <!-- overlay map image -->
             <div class="absolute md:p-5 md:-top-60 -top-30 md:left-15 md:mx-10 mx-5 h-full w-[90%]  ">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7004.029901607593!2d77.38176975603638!3d28.629314006965398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1788154814172!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="md:h-[55%] h-[10%] w-[95%] object-cover md:border-15 border-10 border-white rounded-2xl"></iframe>></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7004.029901607593!2d77.38176975603638!3d28.629314006965398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1788154814172!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="md:h-[55%] h-[10%] w-[95%] object-cover md:border-15 border-10 border-white rounded-2xl"></iframe>></iframe>
             </div>
 
             <div class="grid  md:grid-cols-[1fr_3fr]  gap-20 text-white md:pt-35 pt-25 md:px-20 px-5">
@@ -879,7 +1023,7 @@
 
                     <div class="flex flex-col md:gap-4 gap-2">
                         <div class="flex gap-3 items-center">
-                            <img src="assets/footerlocationicon.png" alt="" >
+                            <img src="assets/footerlocationicon.png" alt="">
                             <p class="text-[20px] font-bold font-Cormorant">Contact Us</p>
                         </div>
                         <p>10c The Green, Kings Norton, Birmingham, B38 8SD</p>
@@ -924,10 +1068,10 @@
                             <img src="assets/fotterusericon.png" alt="">
                             <p class="text-[20px] font-bold font-Cormorant">Your Stay</p>
                         </div>
-                            <p>Optional Extras</p>
-                           <p> Pizza Shack</p>
-                           <p> We Recommend</p>
-                           <p> Term & Conditions </p>  
+                        <p>Optional Extras</p>
+                        <p> Pizza Shack</p>
+                        <p> We Recommend</p>
+                        <p> Term & Conditions </p>
                     </div>
 
 
@@ -954,6 +1098,7 @@
 
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

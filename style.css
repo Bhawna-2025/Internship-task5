@@ -1,7 +1,38 @@
 body {
   font-family: "Cormorant", serif;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.swiper2 {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+ 
+}
+
+
+/* Side slides: slightly dimmed and scaled */
+.swiper-slide {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+
+/* Active slide centered */
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
 
 }
-/* #A18E5A */
-/* #3F5C47 */
-/* Francy , aleo , greate vibes */
+
+/* Custom pagination color styling */
+.swiper-pagination-bullet-active {
+  background-color: #3F5C47 !important;
+}
+
